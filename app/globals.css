@@ -10,6 +10,17 @@
   /*--background-start-rgb: 214, 219, 220;*/
   /*--background-end-rgb: 255, 255, 255;*/
 }
+    @layer utilities {
+        .bg-gradient-to-r {
+            background: linear-gradient(to right, #fff, #e57373);
+        }
+    }
+
+
+
+
+
+
 
 /*@media (prefers-color-scheme: dark) {*/
 /*  :root {*/

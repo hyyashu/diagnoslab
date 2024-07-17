@@ -4,7 +4,7 @@ import Image from "next/image";
 function Header() {
     return (
 <>
-        <header className="flex flex-wrap items-center justify-center  pt-3 pb-3 border-none">
+        <header className="flex flex-wrap items-center justify-center pb-3 border-none">
             <div className="flex items-center mr-3">
                 <Image
                     src="/DiagnosLabLogo.svg"

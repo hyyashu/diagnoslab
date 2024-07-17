@@ -13,6 +13,8 @@ function Footer() {
                             "Jamshedpur",
                             "Adityapur",
                             "Ranchi",
+                            "Dhanband",
+                            "Bokara",
                             "Dumka",
                             "Deoghar",
                             "Chaibasa",
@@ -68,13 +70,13 @@ function Footer() {
                 </div>
                 <div className="mt-6 flex flex-wrap justify-between border-t pt-4 text-sm">
                     <div className="flex flex-wrap gap-4">
-                        {["Privacy Policy", "Term of Use", "CSR", " Sitemap", "Notices"].map((link) => (
+                        {["Privacy Policy", "Term of Use", "Sitemap", "Notices"].map((link) => (
                             <a key={link} href="#">
                                 {link}
                             </a>
                         ))}
                     </div>
-                    <div>Copyright © 2024</div>
+                    <div>Narayana Diagnostic & Imaging © 2024</div>
                 </div>
             </div>
 
