@@ -1,9 +1,4 @@
-import Image from "next/image";
 import "./globals.css";
-import React from "react";
-import Services from "@/sections/Services";
-import Whyus from "@/sections/Whyus";
-import FaqSection from "@/sections/FaqSection";
 import TestCard from "@/sections/TestCard";
 
 export default function Home() {
@@ -32,7 +27,6 @@ export default function Home() {
           </div>
         </section>
       </div>
-        <Whyus/>
         <TestCard/>
       </main>
   );
