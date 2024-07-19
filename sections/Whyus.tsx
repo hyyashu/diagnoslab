@@ -12,8 +12,8 @@ const Services = () => {
                             "Home Collection starts at 6 AM by qualified technicians",
                             "Same day reporting with 100% accuracy",
                             "Most trusted pathology lab by doctors",
-                        ].map((whyus) => (
-                            <span className="" key={whyus}>{whyus}</span>
+                        ].map((item) => (
+                            <span className="" key={item}>{item}</span>
                         ))}
                     </div>
                 </div>
