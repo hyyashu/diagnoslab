@@ -1,10 +1,15 @@
-import Image from "next/image";
-import Header from "@/components/Header";
 
-export default function Home() {
-    return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+export default function Page() {
+    return  <>
+    <div className="flex justify-center">
+        <h1 className="flex text-center">Join Us</h1>
+    </div>
+        <div className="flex bg-red-700 h-3 m-5 pt-2 pb-5">
+            <div className="flex"></div>
+            <p>LL</p>
+        </div>
+        <div className="flex">
+        </div>
 
-        </main>
-    );
+    </>
 }

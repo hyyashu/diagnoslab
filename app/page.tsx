@@ -1,7 +1,10 @@
 import Image from "next/image";
 import "./globals.css";
 import React from "react";
-import Services from "@/components/Services";
+import Services from "@/sections/Services";
+import Whyus from "@/sections/Whyus";
+import FaqSection from "@/sections/FaqSection";
+import TestCard from "@/sections/TestCard";
 
 export default function Home() {
   return (
@@ -18,18 +21,19 @@ export default function Home() {
                 <input className="mr-2" type="checkbox" required/>
                 I authorize Diagnos Lab to contact me via phone calls, email, SMS or WhatsApp
               </label>
-              <button className="bg-red-700 text-white p-2 cursor-pointer rounded" type="submit">Send</button>
+              <button className="bg-DiagnosRed text-white p-2 cursor-pointer rounded" type="submit">Send</button>
             </form>
             <p className="mt-2">
               Have a simple question? <a  className="text-red-700 hover:underline" href="" >Check out our FAQ</a>
             </p>
           </div>
-          <div className="ounded ">
+          <div className="">
             <img className="rounded-lg" src="https://placehold.co/900x400"  alt=""/>
           </div>
         </section>
       </div>
-        <Services/>
+        <Whyus/>
+        <TestCard/>
       </main>
   );
 }

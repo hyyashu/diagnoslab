@@ -3,7 +3,7 @@ import React from 'react';
 const Services = () => {
     return (
         <>
-            <section>
+            <section className="container">
                 <div className="flex flex-wrap justify-center text-center">
                     <p className="text-center mt-5">Services</p>
                 </div>

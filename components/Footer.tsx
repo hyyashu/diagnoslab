@@ -5,7 +5,7 @@ function Footer() {
     return (
 
         <footer>
-            <div className="bg-[#e53935] text-white">
+            <div className="bg-DiagnosRed text-white">
                 <div className="container mx-auto py-6 text-center">
                     <h2 className="text-2xl font-semibold">Our Presence</h2>
                     <div className="mt-2 flex flex-wrap justify-center gap-2 text-sm">
@@ -38,14 +38,15 @@ function Footer() {
 
                     <div className="flex flex-wrap gap-4">
                         {[
-                            {name: "Feedback", icon: "Feedback"},
-                            {name: "FAQ's", icon: "FAQ"},
-                            {name: "Careers", icon: "Careers"},
-                            {name: "Franchisee", icon: "Franchisee"},
-                        ].map((item) => (
-                            <div key={item.name} className="flex flex-col items-center">
-
-                                <span>{item.name}</span>
+                            {name: "Feedback", url:"/",icon: "Feedback"},
+                            {name: "FAQ's", url:"/", icon: "FAQ"},
+                            {name: "Careers", url:"/careers", icon: "Careers"},
+                            {name: "Franchisee", url:"/", icon: "Franchisee"},
+                        ].map((link) => (
+                            <div key={link.name} className="flex flex-col items-center">
+                                <a key={link.name} href={link.url} className="text-sm">
+                                    {link.name}
+                                </a>
                             </div>
                         ))}
                     </div>
@@ -60,9 +61,14 @@ function Footer() {
                     <div>
                         <h4 className="text-lg font-semibold">Quick Links</h4>
                         <div className="mt-2 flex flex-wrap gap-4">
-                            {["Home", "About Us", "Partner Labs", "Blogs", "Center Locator", "Contact Us"].map((link) => (
-                                <a key={link} href="#" className="text-sm">
-                                    {link}
+                            {[
+                                {name: "Home", url:"/"},
+                                {name: "About Us", url:"http://localhost"},
+                                {name: "Blogs", url:"/blogs"},
+                                {name: "Center Locator", url:"http://localhost"},
+                                {name: "Contact Us", url:"/contact-us"},].map((link) => (
+                                <a key={link.name} href={link.url} className="text-sm">
+                                    {link.name}
                                 </a>
                             ))}
                         </div>
@@ -70,9 +76,13 @@ function Footer() {
                 </div>
                 <div className="mt-6 flex flex-wrap justify-between border-t pt-4 text-sm">
                     <div className="flex flex-wrap gap-4">
-                        {["Privacy Policy", "Term of Use", "Sitemap", "Notices"].map((link) => (
-                            <a key={link} href="#">
-                                {link}
+                        {[
+                            {name: "Privacy Policy", url:"/"},
+                            {name: "Term of Use", url:"/"},
+                            {name: "Sitemap", url:"/sitemap.xml"},
+                            {name: "Notices", url:"/"},].map((link) => (
+                            <a key={link.name} href={link.url}>
+                                {link.name}
                             </a>
                         ))}
                     </div>
