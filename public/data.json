@@ -1,0 +1,108 @@
+[
+  {
+    "name": "ANTE NATAL PACKAGE",
+    "originalPrice": 3000,
+    "discountedPrice": 1100,
+    "tests": [
+      "CBC",
+      "Blood Group",
+      "Glucose (F/ PR/ R/ PG)",
+      "TSH Ultra",
+      "Urine Routine",
+      "VDRL",
+      "Elisa",
+      "Serology (HIV, HBSAG,HCV)"
+    ],
+    "faqs": {
+      "What are antenatal tests?": "Antenatal tests are conducted during pregnancy to monitor the health of the pregnant person and foetus.",
+      "Why are antenatal tests conducted?": "For identifying potential complications early to ensure appropriate interventions and a healthy pregnancy and delivery.",
+      "Who should get this test done?": "All pregnant individuals should get antenatal tests to monitor their health and the developing foetus’s well-being.",
+      "Why are these tests important?": "These tests ensure a safe, healthy pregnancy by identifying potential issues early. Protect your health and your baby’s well-being, allowing you to enjoy the excitement of welcoming your new addition. Trust these comprehensive tests for a smooth pregnancy journey."
+    },
+    "test_included": {
+      "CBC": "Complete Blood Count (CBC) measures red and white blood cells, haemoglobin, and platelets to detect anaemia and infections, crucial for monitoring maternal and foetal health.",
+      "Blood Group": "Blood Group testing determines maternal blood type and Rh factor, essential for managing Rh compatibility and transfusion needs during pregnancy.",
+      "Glucose (F/ PR/ R/ PG)": "Glucose tests (Fasting, Postprandial, Random, Post Glucose) monitor blood sugar levels to detect and manage gestational diabetes.",
+      "TSH Ultra": "Thyroid-Stimulating Hormone (TSH) Ultra test checks thyroid function, vital for maintaining maternal metabolism and supporting foetal development.",
+      "Urine Routine": "Urine Routine analysis screens for urinary tract infections and kidney issues, ensuring a healthy pregnancy by detecting potential complications early.",
+      "VDRL": "VDRL test screens for syphilis, preventing serious pregnancy complications and ensuring timely treatment to protect maternal and foetal health.",
+      "ELISA": "ELISA test detects antibodies for infections and autoimmune conditions, crucial for early intervention and maintaining a healthy pregnancy.",
+      "Serology (HIV, HBSAG, HCV)": "Serology tests for HIV, Hepatitis B (HBSAG), and Hepatitis C (HCV) identify viral infections, essential for preventing transmission and managing maternal health."
+    }
+  },
+  {
+    "name": "Diabetes Monitoring panel - 1",
+    "originalPrice": 3000,
+    "discountedPrice": 1400,
+    "parameters": [
+      "HbA1c",
+      "Fasting",
+      "glucose",
+      "Postprandial",
+      "Blood",
+      "urea",
+      "nitrogen",
+      "Creatinine",
+      "Uric",
+      "acid",
+      "Total",
+      "cholesterol",
+      "HDL",
+      "Triglycerides",
+      "Direct",
+      "LDL",
+      "Microalbumin",
+      "random",
+      "urine",
+      "Urinary"
+    ],
+    "faqs": {
+      "What is the Diabetes Monitoring Panel?": "Tests for blood glucose levels, kidney function, cholesterol, and urine microalbumin.",
+      "Why are these tests conducted?": "To monitor diabetes management and assess kidney and cardiovascular health.",
+      "Who should get this test done?": "Individuals with diabetes or those at risk of developing diabetes.",
+      "Why are these tests important?": "They help track blood sugar control and detect complications early, ensuring effective diabetes management."
+    },
+    "test_included": {
+      "CBC": "Complete Blood Count (CBC) measures red and white blood cells, haemoglobin, and platelets to detect anaemia and infections, crucial for monitoring maternal and foetal health.",
+      "Blood Group": "Blood Group testing determines maternal blood type and Rh factor, essential for managing Rh compatibility and transfusion needs during pregnancy.",
+      "Glucose (F/ PR/ R/ PG)": "Glucose tests (Fasting, Postprandial, Random, Post Glucose) monitor blood sugar levels to detect and manage gestational diabetes.",
+      "TSH Ultra": "Thyroid-Stimulating Hormone (TSH) Ultra test checks thyroid function, vital for maintaining maternal metabolism and supporting foetal development.",
+      "Urine Routine": "Urine Routine analysis screens for urinary tract infections and kidney issues, ensuring a healthy pregnancy by detecting potential complications early.",
+      "VDRL": "VDRL test screens for syphilis, preventing serious pregnancy complications and ensuring timely treatment to protect maternal and foetal health.",
+      "ELISA": "ELISA test detects antibodies for infections and autoimmune conditions, crucial for early intervention and maintaining a healthy pregnancy.",
+      "Serology (HIV, HBSAG, HCV)": "Serology tests for HIV, Hepatitis B (HBSAG), and Hepatitis C (HCV) identify viral infections, essential for preventing transmission and managing maternal health."
+    }
+  },
+  {
+    "name": "Arthritis Panel 1",
+    "originalPrice": 3000,
+    "discountedPrice": 1400,
+    "parameters": ["CBC",
+      "ESR",
+      "SGPT",
+      "SGOT",
+      "Urea",
+      "Uric Acid",
+      "CRP",
+      "RA Factor",
+      "ANA",
+      "Urine Routine"],
+    "testDescriptions": {
+      "CBC": "Complete Blood Count (CBC) measures various components of blood to detect anemia and signs of inflammation, which are crucial for assessing overall health in arthritis patients.",
+      "ESR": "Erythrocyte Sedimentation Rate (ESR) measures the rate at which red blood cells settle in a tube over a specific period. Elevated rates indicate inflammation, helping diagnose and monitor arthritis and its severity.",
+      "SGPT": "SGPT (ALT) is a liver enzyme test that assesses liver function. Monitoring SGPT levels is important to ensure that liver function remains stable, especially during arthritis treatment.",
+      "SGOT": "SGOT (AST) is another liver enzyme test that evaluates liver function and helps monitor potential liver damage, which can be a side effect of arthritis medications.",
+      "Urea": "The Urea test measures kidney function by evaluating the concentration of urea in the blood. This is important as certain arthritis treatments can impact kidney function.",
+      "Uric Acid": "The Uric Acid test checks for elevated levels of uric acid in the blood, which can indicate gout, a type of arthritis characterized by sudden and severe pain and inflammation.",
+      "CRP": "C-Reactive Protein (CRP) measures the level of CRP in the blood, which increases in response to inflammation. This test helps in diagnosing and monitoring inflammatory arthritis conditions.",
+      "RA Factor": "Rheumatoid Factor (RA Factor) is a test that detects antibodies associated with rheumatoid arthritis. It aids in the diagnosis and monitoring of rheumatoid arthritis.",
+      "ANA": "Antinuclear Antibody (ANA) test screens for autoimmune disorders, such as lupus, which can present with arthritis-like symptoms and affect joint health.",
+      "Urine Routine": "Urine Routine analysis examines urine for abnormalities, helping detect kidney issues or infections, which can be complications of arthritis or its treatments."
+    },
+    "faqs": {
+      "purpose": "To diagnose different types of arthritis, monitor levels of inflammation, and evaluate liver and kidney function, which can be affected by arthritis or its treatments.",
+      "importance": "These tests provide a comprehensive view of inflammation, joint health, liver and kidney function, and help guide effective treatment and management of arthritis.",
+      "whoShouldGetTested": "Individuals experiencing joint pain, swelling, or stiffness, or those who suspect they might have arthritis, should consider this panel. It is also useful for monitoring existing arthritis conditions."
+    }
+  }
+]
