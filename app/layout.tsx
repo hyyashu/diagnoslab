@@ -6,7 +6,10 @@ import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const font = Montserrat({ subsets: ["latin"] });
+const font = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+});
 
 export const metadata: Metadata = {
   title: "Diagnos Lab",
@@ -20,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    <GoogleAnalytics gaId="G-FLMYM554K8" />
+    <GoogleTagManager gtmId="GTM-FLMYM554K8" />
       <body className={font.className}>
-        <GoogleAnalytics gaId="G-FLMYM554K8" />
-        <GoogleTagManager gtmId="GTM-FLMYM554K8" />
         <header>
           <Navbar />
           <Header />
