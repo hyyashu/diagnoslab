@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "title": "Radiologist",
+    "location": "Remote",
+    "type": "Full-time",
+    "responsibilities": [
+      "Interpret medical images such as X-rays, MRIs, and CT scans.",
+      "Provide diagnoses and reports to referring physicians.",
+      "Participate in multidisciplinary team meetings.",
+      "Ensure the highest standards of medical imaging are maintained.",
+      "Stay updated with the latest advancements in radiology."
+    ],
+    "requirements": [
+      "Board certification in Radiology.",
+      "Proven experience as a Radiologist.",
+      "Strong analytical and communication skills.",
+      "Proficiency in medical imaging technology.",
+      "Ability to work independently and in a team."
+    ],
+    "applyLink": "https://forms.gle/your-google-form-link"
+  },
+  {
+    "id": 2,
+    "title": "X-Ray Technician",
+    "location": "Remote",
+    "type": "Full-time",
+    "responsibilities": [
+      "Operate X-ray equipment to produce images of the body for diagnostic purposes.",
+      "Explain procedures to patients and ensure their comfort and safety.",
+      "Maintain X-ray equipment and report any malfunctions.",
+      "Assist Radiologists in interpreting the images.",
+      "Ensure compliance with health and safety regulations."
+    ],
+    "requirements": [
+      "Certification as an X-Ray Technician.",
+      "Experience in operating X-ray equipment.",
+      "Strong attention to detail.",
+      "Excellent patient care and communication skills.",
+      "Knowledge of health and safety standards in radiology."
+    ],
+    "applyLink": "https://forms.gle/your-google-form-link"
+  },
+  {
+    "id": 3,
+    "title": "Phlebotomist",
+    "location": "Remote",
+    "type": "Full-time",
+    "responsibilities": [
+      "Draw blood from patients for lab tests and donations.",
+      "Label and store blood samples accurately.",
+      "Maintain patient records.",
+      "Ensure compliance with health and safety regulations.",
+      "Provide excellent patient care and support."
+    ],
+    "requirements": [
+      "Certification in Phlebotomy.",
+      "Experience in drawing blood and handling specimens.",
+      "Strong attention to detail.",
+      "Excellent patient care and communication skills.",
+      "Knowledge of health and safety standards."
+    ],
+    "applyLink": "https://forms.gle/your-google-form-link"
+  },
+  {
+    "id": 4,
+    "title": "Sales Manager",
+    "location": "Remote",
+    "type": "Full-time",
+    "responsibilities": [
+      "Develop and implement sales strategies to achieve company goals.",
+      "Lead and motivate the sales team.",
+      "Analyze sales data and market trends to identify opportunities.",
+      "Build and maintain strong customer relationships.",
+      "Collaborate with other departments to optimize sales efforts."
+    ],
+    "requirements": [
+      "Proven experience as a Sales Manager.",
+      "Strong leadership and team management skills.",
+      "Excellent communication and negotiation skills.",
+      "Ability to analyze sales data and market trends.",
+      "Bachelor's degree in Business Administration or a related field."
+    ],
+    "applyLink": "https://forms.gle/your-google-form-link"
+  },
+  {
+    "id": 5,
+    "title": "Sales Executive",
+    "location": "Remote",
+    "type": "Full-time",
+    "responsibilities": [
+      "Identify and pursue new sales opportunities.",
+      "Present products and services to potential clients.",
+      "Negotiate contracts and close deals.",
+      "Maintain client relationships and provide excellent customer service.",
+      "Achieve sales targets and contribute to team success."
+    ],
+    "requirements": [
+      "Proven experience as a Sales Executive or similar role.",
+      "Strong communication and negotiation skills.",
+      "Ability to work independently and as part of a team.",
+      "Excellent organizational and time management skills.",
+      "Bachelor's degree in Business, Marketing, or a related field."
+    ],
+    "applyLink": "https://forms.gle/your-google-form-link"
+  },
+  {
+    "id": 6,
+    "title": "Lab Technician",
+    "location": "Remote",
+    "type": "Full-time",
+    "responsibilities": [
+      "Perform laboratory tests and procedures.",
+      "Analyze test results and maintain accurate records.",
+      "Operate and maintain lab equipment.",
+      "Ensure compliance with health and safety regulations.",
+      "Collaborate with healthcare professionals to ensure accurate test results."
+    ],
+    "requirements": [
+      "Certification as a Lab Technician.",
+      "Experience in a clinical laboratory setting.",
+      "Strong attention to detail.",
+      "Excellent analytical and problem-solving skills.",
+      "Knowledge of laboratory health and safety standards."
+    ],
+    "applyLink": "https://forms.gle/your-google-form-link"
+  }
+]

@@ -1,83 +1,118 @@
 [
   {
-    "name": "ANTE NATAL PACKAGE",
+    "name": "Ante Natal Package",
     "originalPrice": 3000,
-    "discountedPrice": 1100,
-    "tests": [
+    "discountedPrice": 1500,
+    "parameters": [
       "CBC",
       "Blood Group",
       "Glucose (F/ PR/ R/ PG)",
       "TSH Ultra",
       "Urine Routine",
       "VDRL",
-      "Elisa",
-      "Serology (HIV, HBSAG,HCV)"
+      "ELISA",
+      "Serology (HIV, HBSAG, HCV)"
     ],
-    "faqs": {
-      "What are antenatal tests?": "Antenatal tests are conducted during pregnancy to monitor the health of the pregnant person and foetus.",
-      "Why are antenatal tests conducted?": "For identifying potential complications early to ensure appropriate interventions and a healthy pregnancy and delivery.",
-      "Who should get this test done?": "All pregnant individuals should get antenatal tests to monitor their health and the developing foetus’s well-being.",
-      "Why are these tests important?": "These tests ensure a safe, healthy pregnancy by identifying potential issues early. Protect your health and your baby’s well-being, allowing you to enjoy the excitement of welcoming your new addition. Trust these comprehensive tests for a smooth pregnancy journey."
-    },
-    "test_included": {
-      "CBC": "Complete Blood Count (CBC) measures red and white blood cells, haemoglobin, and platelets to detect anaemia and infections, crucial for monitoring maternal and foetal health.",
+    "testDescriptions": {
+      "CBC": "Complete Blood Count (CBC) measures red and white blood cells, hemoglobin, and platelets to detect anemia and infections, crucial for monitoring maternal and fetal health.",
       "Blood Group": "Blood Group testing determines maternal blood type and Rh factor, essential for managing Rh compatibility and transfusion needs during pregnancy.",
       "Glucose (F/ PR/ R/ PG)": "Glucose tests (Fasting, Postprandial, Random, Post Glucose) monitor blood sugar levels to detect and manage gestational diabetes.",
-      "TSH Ultra": "Thyroid-Stimulating Hormone (TSH) Ultra test checks thyroid function, vital for maintaining maternal metabolism and supporting foetal development.",
+      "TSH Ultra": "Thyroid-Stimulating Hormone (TSH) Ultra test checks thyroid function, vital for maintaining maternal metabolism and supporting fetal development.",
       "Urine Routine": "Urine Routine analysis screens for urinary tract infections and kidney issues, ensuring a healthy pregnancy by detecting potential complications early.",
-      "VDRL": "VDRL test screens for syphilis, preventing serious pregnancy complications and ensuring timely treatment to protect maternal and foetal health.",
+      "VDRL": "VDRL test screens for syphilis, preventing serious pregnancy complications and ensuring timely treatment to protect maternal and fetal health.",
       "ELISA": "ELISA test detects antibodies for infections and autoimmune conditions, crucial for early intervention and maintaining a healthy pregnancy.",
       "Serology (HIV, HBSAG, HCV)": "Serology tests for HIV, Hepatitis B (HBSAG), and Hepatitis C (HCV) identify viral infections, essential for preventing transmission and managing maternal health."
+    },
+    "faqs": {
+      "purpose": "Antenatal tests are conducted during pregnancy to monitor the health of the pregnant person and fetus, identify potential complications early, and ensure appropriate interventions for a healthy pregnancy and delivery.",
+      "importance": "These tests ensure a safe, healthy pregnancy by identifying potential issues early, protecting both maternal and fetal health, and allowing for timely interventions to address any complications.",
+      "whoShouldGetTested": "All pregnant individuals should get antenatal tests to monitor their health and the developing fetus’s well-being. These tests are essential for ensuring a healthy pregnancy and addressing any potential issues promptly."
     }
   },
   {
-    "name": "Diabetes Monitoring panel - 1",
-    "originalPrice": 3000,
+    "name": "Diabetes Monitoring Panel - 1",
+    "originalPrice": null,
     "discountedPrice": 1400,
     "parameters": [
       "HbA1c",
-      "Fasting",
-      "glucose",
-      "Postprandial",
-      "Blood",
-      "urea",
-      "nitrogen",
+      "Fasting Glucose",
+      "Postprandial Glucose",
+      "Blood Urea Nitrogen (BUN)",
       "Creatinine",
-      "Uric",
-      "acid",
-      "Total",
-      "cholesterol",
-      "HDL",
+      "Uric Acid",
+      "Total Cholesterol",
+      "HDL Cholesterol",
       "Triglycerides",
-      "Direct",
-      "LDL",
-      "Microalbumin",
-      "random",
-      "urine",
-      "Urinary"
+      "Direct LDL Cholesterol",
+      "Microalbumin Random Urine",
+      "Urinary Microalbumin"
     ],
-    "faqs": {
-      "What is the Diabetes Monitoring Panel?": "Tests for blood glucose levels, kidney function, cholesterol, and urine microalbumin.",
-      "Why are these tests conducted?": "To monitor diabetes management and assess kidney and cardiovascular health.",
-      "Who should get this test done?": "Individuals with diabetes or those at risk of developing diabetes.",
-      "Why are these tests important?": "They help track blood sugar control and detect complications early, ensuring effective diabetes management."
+    "testDescriptions": {
+      "HbA1c": "Measures average blood glucose levels over the past three months, essential for long-term diabetes management and control.",
+      "Fasting Glucose": "Assesses blood sugar levels after fasting, crucial for diagnosing and monitoring diabetes.",
+      "Postprandial Glucose": "Measures blood sugar levels after meals to evaluate how well diabetes is managed post-eating.",
+      "Blood Urea Nitrogen (BUN)": "Monitors kidney function by evaluating waste levels in the blood, helping detect diabetes-related kidney damage.",
+      "Creatinine": "Evaluates kidney health by measuring waste product levels, crucial for detecting complications from diabetes.",
+      "Uric Acid": "Checks uric acid levels in the blood to prevent gout, which can be associated with diabetes.",
+      "Total Cholesterol": "Assesses overall cholesterol levels, important for managing cardiovascular risks linked to diabetes.",
+      "HDL Cholesterol": "Measures 'good' cholesterol levels, helping lower the risk of heart disease in diabetes patients.",
+      "Triglycerides": "Evaluates fat levels in the blood, crucial for reducing heart disease risk in diabetes.",
+      "Direct LDL Cholesterol": "Measures 'bad' cholesterol directly, essential for managing heart health in diabetes.",
+      "Microalbumin Random Urine": "Detects small amounts of albumin in urine, an early sign of diabetic kidney disease.",
+      "Urinary Microalbumin": "Assesses kidney health by detecting protein leakage, indicating potential complications from diabetes."
     },
-    "test_included": {
-      "CBC": "Complete Blood Count (CBC) measures red and white blood cells, haemoglobin, and platelets to detect anaemia and infections, crucial for monitoring maternal and foetal health.",
-      "Blood Group": "Blood Group testing determines maternal blood type and Rh factor, essential for managing Rh compatibility and transfusion needs during pregnancy.",
-      "Glucose (F/ PR/ R/ PG)": "Glucose tests (Fasting, Postprandial, Random, Post Glucose) monitor blood sugar levels to detect and manage gestational diabetes.",
-      "TSH Ultra": "Thyroid-Stimulating Hormone (TSH) Ultra test checks thyroid function, vital for maintaining maternal metabolism and supporting foetal development.",
-      "Urine Routine": "Urine Routine analysis screens for urinary tract infections and kidney issues, ensuring a healthy pregnancy by detecting potential complications early.",
-      "VDRL": "VDRL test screens for syphilis, preventing serious pregnancy complications and ensuring timely treatment to protect maternal and foetal health.",
-      "ELISA": "ELISA test detects antibodies for infections and autoimmune conditions, crucial for early intervention and maintaining a healthy pregnancy.",
-      "Serology (HIV, HBSAG, HCV)": "Serology tests for HIV, Hepatitis B (HBSAG), and Hepatitis C (HCV) identify viral infections, essential for preventing transmission and managing maternal health."
-    }
+    "faqs": {
+      "purpose": "To monitor diabetes management and assess kidney and cardiovascular health by tracking blood glucose levels, cholesterol, and urine microalbumin.",
+      "importance": "These tests help track blood sugar control, detect complications early, and ensure effective management of diabetes and its related health risks.",
+      "whoShouldGetTested": "Individuals with diabetes or those at risk of developing diabetes should consider this panel for regular monitoring and assessment of their condition."
+    },
+    "note": "Diabetes Monitoring Panel - 2 includes insulin fasting and urine routine tests, offering a more detailed assessment of diabetes management compared to Panel - 1."
+  },
+  {
+    "name": "Diabetes Monitoring Panel - 2",
+    "originalPrice": null,
+    "discountedPrice": 1900,
+    "parameters": [
+      "HbA1c",
+      "Fasting Glucose",
+      "Postprandial Glucose",
+      "Serum Creatinine",
+      "Uric Acid",
+      "Total Cholesterol",
+      "HDL Cholesterol",
+      "Triglycerides",
+      "Direct LDL Cholesterol",
+      "Insulin Fasting",
+      "Microalbumin Random",
+      "Urine Routine and Microscopy"
+    ],
+    "testDescriptions": {
+      "HbA1c": "Measures average blood glucose levels over the past three months, essential for long-term diabetes management and control.",
+      "Fasting Glucose": "Assesses blood sugar levels after fasting, essential for diagnosing and monitoring diabetes.",
+      "Postprandial Glucose": "Measures blood sugar levels after meals to evaluate how well diabetes is managed post-eating.",
+      "Serum Creatinine": "Evaluates kidney health by measuring waste product levels, important for detecting complications from diabetes.",
+      "Uric Acid": "Checks uric acid levels in the blood to prevent gout, which can be associated with diabetes.",
+      "Total Cholesterol": "Assesses overall cholesterol levels, important for managing cardiovascular risks linked to diabetes.",
+      "HDL Cholesterol": "Measures 'good' cholesterol levels, helping lower the risk of heart disease in diabetes patients.",
+      "Triglycerides": "Evaluates fat levels in the blood, crucial for reducing heart disease risk in diabetes.",
+      "Direct LDL Cholesterol": "Measures 'bad' cholesterol directly, essential for managing heart health in diabetes.",
+      "Insulin Fasting": "Assesses fasting insulin levels to help manage insulin therapy and diabetes control.",
+      "Microalbumin Random": "Detects small amounts of albumin in urine, an early sign of diabetic kidney disease.",
+      "Urine Routine and Microscopy": "Examines urine for abnormalities, aiding in the detection of kidney issues and infections associated with diabetes."
+    },
+    "faqs": {
+      "purpose": "To monitor diabetes management, insulin levels, and overall kidney and cardiovascular health by tracking blood glucose, cholesterol, and urine health.",
+      "importance": "These tests provide comprehensive insights into blood sugar control, insulin levels, and potential complications, aiding in optimal diabetes management and preventing related health issues.",
+      "whoShouldGetTested": "Individuals with diabetes, prediabetes, or those managing insulin therapy should consider this panel for a thorough assessment of their condition."
+    },
+    "note": "Diabetes Monitoring Panel - 2 includes insulin fasting and urine routine tests, offering a more detailed assessment of diabetes management compared to Panel - 1."
   },
   {
     "name": "Arthritis Panel 1",
     "originalPrice": 3000,
     "discountedPrice": 1400,
-    "parameters": ["CBC",
+    "parameters": [
+      "CBC",
       "ESR",
       "SGPT",
       "SGOT",
@@ -86,7 +121,8 @@
       "CRP",
       "RA Factor",
       "ANA",
-      "Urine Routine"],
+      "Urine Routine"
+    ],
     "testDescriptions": {
       "CBC": "Complete Blood Count (CBC) measures various components of blood to detect anemia and signs of inflammation, which are crucial for assessing overall health in arthritis patients.",
       "ESR": "Erythrocyte Sedimentation Rate (ESR) measures the rate at which red blood cells settle in a tube over a specific period. Elevated rates indicate inflammation, helping diagnose and monitor arthritis and its severity.",
@@ -102,7 +138,391 @@
     "faqs": {
       "purpose": "To diagnose different types of arthritis, monitor levels of inflammation, and evaluate liver and kidney function, which can be affected by arthritis or its treatments.",
       "importance": "These tests provide a comprehensive view of inflammation, joint health, liver and kidney function, and help guide effective treatment and management of arthritis.",
-      "whoShouldGetTested": "Individuals experiencing joint pain, swelling, or stiffness, or those who suspect they might have arthritis, should consider this panel. It is also useful for monitoring existing arthritis conditions."
+      "whoShouldGetTested": "Individuals experiencing joint pain, swelling, or stiffness, or those who suspect they might have arthritis, should consider this panel. It is also useful for monitoring existing arthritis conditions."
+    }
+  },
+  {
+    "name": "ARTHRITIS PANEL 2",
+    "originalPrice": 4500,
+    "discountedPrice": 3100,
+    "parameters": [
+      "CBC",
+      "ESR",
+      "Uric Acid",
+      "CRP",
+      "RA Factor",
+      "ASO",
+      "ANA",
+      "Anti-CCP",
+      "Urine Routine"
+    ],
+    "testDescriptions": {
+      "CBC": "Complete Blood Count (CBC) detects anemia and inflammation, essential for evaluating overall health and monitoring arthritis-related conditions.",
+      "ESR": "Erythrocyte Sedimentation Rate (ESR) measures inflammation levels, aiding in the diagnosis and monitoring of arthritis severity.",
+      "Uric Acid": "Identifies elevated levels indicating gout, a type of inflammatory arthritis.",
+      "CRP": "C-Reactive Protein (CRP) measures inflammation, crucial for diagnosing and tracking inflammatory arthritis conditions.",
+      "RA Factor": "Rheumatoid Factor (RA Factor) detects antibodies linked to rheumatoid arthritis, aiding in diagnosis and disease monitoring.",
+      "ASO": "Antistreptolysin O (ASO) titer detects streptococcal infections, which can trigger reactive arthritis.",
+      "ANA": "Antinuclear Antibody (ANA) test screens for autoimmune diseases like lupus, often associated with arthritis symptoms.",
+      "Anti-CCP": "Anti-Cyclic Citrullinated Peptide (Anti-CCP) detects specific antibodies in rheumatoid arthritis, crucial for early diagnosis and prognosis.",
+      "Urine Routine": "Analysis detects kidney issues and infections, which can be complications of arthritis or its treatments."
+    },
+    "faqs": {
+      "purpose": "To diagnose and monitor arthritis by evaluating blood health, inflammation, autoimmune markers, and uric acid levels.",
+      "importance": "These tests provide detailed diagnostics and guide targeted treatment for arthritis.",
+      "whoShouldGetTested": "Individuals with suspected autoimmune arthritis or persistent joint symptoms should get this panel."
+    }
+  },
+  {
+    "name": "NIROGYAM D PLUS",
+    "originalPrice": 10000,
+    "discountedPrice": 2500,
+    "parameters": [
+      "CBC",
+      "ESR",
+      "HbA1c",
+      "Sugar Fasting",
+      "LFT",
+      "LDH",
+      "GGT",
+      "Lipid Profile",
+      "KFT",
+      "Iron Profile",
+      "Urinary Microalbumin",
+      "Electrolytes",
+      "T3",
+      "T4",
+      "TSH",
+      "25-OH Vitamin D",
+      "Vitamin B12",
+      "Urine Routine"
+    ],
+    "testDescriptions": {
+      "CBC": "Complete Blood Count (CBC) detects anemia, infection, and inflammation, providing a comprehensive overview of overall health.",
+      "ESR": "Erythrocyte Sedimentation Rate (ESR) measures inflammation levels, aiding in the diagnosis and monitoring of chronic diseases.",
+      "HbA1c": "Measures average blood sugar levels over three months, crucial for diagnosing and managing diabetes.",
+      "Sugar Fasting": "Fasting Blood Sugar tests blood glucose levels after fasting, helping diagnose diabetes and monitor glucose control.",
+      "LFT": "Liver Function Tests (LFT) assess liver health by measuring enzymes and proteins, detecting liver damage or disease.",
+      "LDH": "Lactate Dehydrogenase (LDH) indicates tissue damage and inflammation, aiding in the diagnosis of various conditions.",
+      "GGT": "Gamma-Glutamyl Transferase (GGT) evaluates liver and bile duct function, helping detect liver disease and alcohol abuse.",
+      "Lipid Profile": "Measures cholesterol and triglyceride levels, assessing cardiovascular health and the risk of heart disease.",
+      "KFT": "Kidney Function Tests (KFT) measure waste products in the blood, evaluating kidney health and detecting renal disorders.",
+      "Iron Profile": "Tests iron levels, detecting anemia and other conditions related to iron deficiency or overload.",
+      "Urinary Microalbumin": "Detects early kidney damage, particularly in diabetes and hypertension patients.",
+      "Electrolytes": "Measures levels of essential minerals, ensuring proper muscle, nerve, and organ function.",
+      "T3": "Thyroxine (T3) measures thyroid hormone levels, helping diagnose thyroid dysfunction.",
+      "T4": "Thyroxine (T4) measures thyroid hormone levels, assisting in the diagnosis of thyroid disorders.",
+      "TSH": "Thyroid-Stimulating Hormone (TSH) measures thyroid function, crucial for diagnosing hypo- or hyperthyroidism.",
+      "25-OH Vitamin D": "Measures vitamin D levels, essential for bone health and immune function.",
+      "Vitamin B12": "Detects vitamin B12 levels, identifying deficiencies that can cause anemia and neurological issues.",
+      "Urine Routine": "Examines urine for infections, kidney issues, and metabolic disorders through analysis of urine components."
+    },
+    "faqs": {
+      "purpose": "To provide a comprehensive assessment of overall health, including blood health, glucose levels, liver and kidney function, vitamin levels, and urine health.",
+      "importance": "These tests provide a broad overview of health, helping diagnose and manage various conditions and monitor treatment progress.",
+      "whoShouldGetTested": "Individuals needing a thorough health checkup, especially those with chronic conditions or symptoms affecting multiple systems."
+    },
+    "note": "Nirogyam D Plus focuses on general health and metabolic assessments, while Nirogyam Maximum includes additional tests for autoimmune conditions, inflammation markers, and comprehensive nutrient evaluation."
+  },
+  {
+    "name": "NIROGYAM MAXIMUM",
+    "originalPrice": 15000,
+    "discountedPrice": 4000,
+    "parameters": [
+      "CBC",
+      "ESR",
+      "HbA1c",
+      "Sugar Fasting",
+      "LFT",
+      "LDH",
+      "GGT",
+      "Lipid Profile",
+      "KFT",
+      "Iron Profile",
+      "Urinary Microalbumin",
+      "Electrolytes",
+      "FT3",
+      "FT4",
+      "TSH",
+      "25-OH Vitamin D",
+      "Vitamin B12",
+      "ASO",
+      "RA Factor",
+      "CRP",
+      "Anti-CCP",
+      "ANA",
+      "Total IgE",
+      "Ferritin",
+      "Intact PTH",
+      "Urine Routine"
+    ],
+    "testDescriptions": {
+      "CBC": "Complete Blood Count (CBC) detects anemia, infections, and inflammation, providing a comprehensive overview of overall health.",
+      "ESR": "Erythrocyte Sedimentation Rate (ESR) measures inflammation levels, aiding in diagnosing and monitoring chronic diseases.",
+      "HbA1c": "Measures average blood sugar levels over three months, crucial for diagnosing and managing diabetes.",
+      "Sugar Fasting": "Fasting Blood Sugar tests blood glucose levels after fasting, helping diagnose diabetes and monitor glucose control.",
+      "LFT": "Liver Function Tests (LFT) assess liver health by measuring enzymes and proteins, detecting liver damage or disease.",
+      "LDH": "Lactate Dehydrogenase (LDH) indicates tissue damage and inflammation, aiding in the diagnosis of various conditions.",
+      "GGT": "Gamma-Glutamyl Transferase (GGT) evaluates liver and bile duct function, helping detect liver disease and alcohol abuse.",
+      "Lipid Profile": "Measures cholesterol and triglyceride levels, assessing cardiovascular health and the risk of heart disease.",
+      "KFT": "Kidney Function Tests (KFT) measure waste products in the blood, evaluating kidney health and detecting renal disorders.",
+      "Iron Profile": "Tests iron levels, detecting anemia and other conditions related to iron deficiency or overload.",
+      "Urinary Microalbumin": "Detects early kidney damage, particularly in diabetes and hypertension patients.",
+      "Electrolytes": "Measures levels of essential minerals, ensuring proper muscle, nerve, and organ function.",
+      "FT3": "Thyroxine (FT3) measures thyroid hormone levels, helping diagnose thyroid dysfunction.",
+      "FT4": "Thyroxine (FT4) measures thyroid hormone levels, assisting in the diagnosis of thyroid disorders.",
+      "TSH": "Thyroid-Stimulating Hormone (TSH) measures thyroid function, crucial for diagnosing hypo- or hyperthyroidism.",
+      "25-OH Vitamin D": "Measures vitamin D levels, essential for bone health and immune function.",
+      "Vitamin B12": "Detects vitamin B12 levels, identifying deficiencies that can cause anemia and neurological issues.",
+      "ASO": "Antistreptolysin O (ASO) titer detects streptococcal infections, which can trigger reactive arthritis.",
+      "RA Factor": "Rheumatoid Factor (RA Factor) detects antibodies linked to rheumatoid arthritis, aiding in diagnosis and disease monitoring.",
+      "CRP": "C-Reactive Protein (CRP) measures inflammation, crucial for diagnosing and tracking inflammatory conditions.",
+      "Anti-CCP": "Anti-Cyclic Citrullinated Peptide (Anti-CCP) detects specific antibodies in rheumatoid arthritis, crucial for early diagnosis and prognosis.",
+      "ANA": "Antinuclear Antibody (ANA) test screens for autoimmune diseases like lupus, often associated with arthritis symptoms.",
+      "Total IgE": "Measures immune response, helping diagnose allergies and some immune disorders.",
+      "Ferritin": "Measures stored iron levels, helping diagnose iron deficiency or overload.",
+      "Intact PTH": "Intact Parathyroid Hormone (PTH) assesses parathyroid function, essential for calcium balance and bone health.",
+      "Urine Routine": "Examines urine for infections, kidney issues, and metabolic disorders through analysis of urine components."
+    },
+    "faqs": {
+      "purpose": "To provide an extensive evaluation of overall health, including autoimmune markers, inflammatory indicators, and additional vitamins and minerals.",
+      "importance": "These tests offer detailed insights into health, aiding in accurate diagnosis, monitoring autoimmune conditions, and managing complex health concerns.",
+      "whoShouldGetTested": "Individuals with chronic conditions, autoimmune symptoms, or complex health issues needing an in-depth evaluation."
+    },
+    "note": "Nirogyam D Plus focuses on general health and metabolic assessments, while Nirogyam Maximum includes additional tests for autoimmune conditions, inflammation markers, and comprehensive nutrient evaluation."
+  },
+  {
+    "name": "AMH PLUS",
+    "originalPrice": 6100,
+    "discountedPrice": 2600,
+    "parameters": [
+      "Anti-Mullerian Hormone (AMH)",
+      "Estradiol",
+      "Progesterone",
+      "Luteinizing Hormone (LH)",
+      "Follicle Stimulating Hormone (FSH)",
+      "Prolactin",
+      "Ultra-Sensitive Thyroid Stimulating Hormone (TSH)",
+      "Testosterone Free & Total"
+    ],
+    "testDescriptions": {
+      "Anti-Mullerian Hormone (AMH)": "AMH assesses ovarian reserve, essential for evaluating fertility potential and overall reproductive health.",
+      "Estradiol": "Measures estrogen levels, crucial for understanding reproductive health, menstrual cycles, and hormonal balance.",
+      "Progesterone": "Evaluates luteal phase function and supports pregnancy, aiding in diagnosing fertility issues and menstrual irregularities.",
+      "Luteinizing Hormone (LH)": "Regulates ovulation and testosterone levels, vital for diagnosing reproductive health and endocrine disorders.",
+      "Follicle Stimulating Hormone (FSH)": "Stimulates ovarian follicles and sperm production, important for assessing fertility and reproductive function.",
+      "Prolactin": "Regulates milk production and affects reproductive health, helping diagnose fertility issues and menstrual disorders.",
+      "Ultra-Sensitive Thyroid Stimulating Hormone (TSH)": "Evaluates thyroid function, essential for diagnosing thyroid disorders and managing metabolic health.",
+      "Testosterone Free & Total": "Measures hormone levels, important for assessing hormonal balance, reproductive health, and diagnosing endocrine disorders."
+    },
+    "faqs": {
+      "purpose": "These tests assess hormonal balance, fertility, and reproductive health, providing a comprehensive overview for diagnosing endocrine and reproductive disorders.",
+      "importance": "Ensures proper diagnosis and treatment of hormone-related issues, improves chances of achieving and maintaining good reproductive health, and supports effective management of fertility and endocrine conditions.",
+      "whoShouldGetTested": "Individuals experiencing irregular periods, fertility issues, hormonal imbalances, or those planning to conceive or undergoing fertility treatments."
+    }
+  },
+  {
+    "name": "BIO T PLUS",
+    "originalPrice": 4000,
+    "discountedPrice": 1100,
+    "parameters": [
+      "CBC",
+      "Differential Leukocyte Count",
+      "Glucose Fasting",
+      "Lipid Profile",
+      "Blood Urea Nitrogen (BUN)",
+      "Creatinine",
+      "Uric Acid",
+      "Calcium",
+      "LFT",
+      "LDH",
+      "Thyroid Profile (T3, T4, TSH)"
+    ],
+    "testDescriptions": {
+      "CBC": "Complete Blood Count (CBC) measures blood cells to detect anemia, infections, and overall health, aiding in early disease detection.",
+      "Differential Leukocyte Count": "Identifies white blood cell types, helping diagnose infections, immune disorders, and various blood-related conditions.",
+      "Glucose Fasting": "Tests blood sugar levels after fasting, crucial for diagnosing and managing diabetes and metabolic disorders.",
+      "Lipid Profile": "Measures cholesterol and triglycerides, assessing cardiovascular health and risk factors for heart disease and stroke.",
+      "Blood Urea Nitrogen (BUN)": "Evaluates kidney function by measuring waste levels in the blood, aiding in kidney disease diagnosis and management.",
+      "Creatinine": "Measures kidney function and health by evaluating waste product levels, crucial for detecting renal disorders.",
+      "Uric Acid": "Identifies elevated levels that can cause gout and kidney stones, helping manage and prevent these conditions.",
+      "Calcium": "Measures blood calcium levels, essential for bone health and diagnosing conditions like osteoporosis and parathyroid disorders.",
+      "LFT": "Assesses liver health by measuring enzymes and proteins, crucial for diagnosing liver diseases and monitoring liver function.",
+      "LDH": "Measures enzyme levels linked to tissue damage, aiding in diagnosing and monitoring various health conditions.",
+      "Thyroid Profile (T3, T4, TSH)": "Evaluates thyroid gland function, diagnosing hypo- or hyperthyroidism, and managing related disorders."
+    },
+    "faqs": {
+      "purpose": "Tests for blood health, glucose, cholesterol, kidney function, uric acid, calcium, liver function, and thyroid function.",
+      "importance": "Helps diagnose and monitor various health conditions, ensuring effective management of metabolic and organ functions.",
+      "whoShouldGetTested": "Individuals needing a broad health assessment or managing conditions affecting blood, metabolism, and organ function."
+    },
+    "note": "Bio T D Plus includes HbA1c, providing additional insight into long-term glucose management compared to Bio T Plus."
+  },
+  {
+    "name": "BIO T D PLUS",
+    "originalPrice": 4600,
+    "discountedPrice": 1400,
+    "parameters": [
+      "HbA1c",
+      "CBC",
+      "Differential Leukocyte Count",
+      "Glucose Fasting",
+      "Lipid Profile",
+      "Blood Urea Nitrogen (BUN)",
+      "Creatinine",
+      "Uric Acid",
+      "Calcium",
+      "LFT",
+      "LDH",
+      "Thyroid Profile (T3, T4, TSH)"
+    ],
+    "testDescriptions": {
+      "HbA1c": "Measures average blood sugar over three months, crucial for diagnosing and managing diabetes and preventing related complications.",
+      "CBC": "Complete Blood Count (CBC) detects anemia, infections, and overall health, aiding in early diagnosis and management of various diseases.",
+      "Differential Leukocyte Count": "Identifies white blood cell types, helping diagnose infections, immune disorders, and blood-related conditions effectively.",
+      "Glucose Fasting": "Tests blood sugar levels after fasting, essential for diagnosing diabetes and managing metabolic health.",
+      "Lipid Profile": "Assesses cholesterol and triglyceride levels, identifying cardiovascular risks and aiding in the prevention of heart disease and stroke.",
+      "Blood Urea Nitrogen (BUN)": "Measures kidney function by evaluating waste levels in the blood, helping diagnose and manage kidney disease and related conditions.",
+      "Creatinine": "Evaluates kidney function by measuring waste product levels, crucial for diagnosing and monitoring renal disorders.",
+      "Uric Acid": "Identifies elevated levels that can lead to gout and kidney stones, assisting in effective management and prevention.",
+      "Calcium": "Tests blood calcium levels to assess bone health and diagnose conditions like osteoporosis and parathyroid disorders, aiding in proper treatment.",
+      "LFT": "Measures liver enzymes and proteins, essential for diagnosing liver diseases and monitoring liver health.",
+      "LDH": "Measures enzyme levels related to tissue damage, assisting in diagnosing and monitoring various health conditions.",
+      "Thyroid Profile (T3, T4, TSH)": "Evaluates thyroid function, helping diagnose hypo- or hyperthyroidism and manage thyroid-related disorders effectively."
+    },
+    "faqs": {
+      "purpose": "Similar to Bio T Plus but includes HbA1c for long-term glucose monitoring.",
+      "importance": "Provides insights into overall health and long-term glucose control, aiding in effective management of diabetes and metabolic health.",
+      "whoShouldGetTested": "Individuals needing a comprehensive health evaluation with a focus on glucose management, especially those with or at risk for diabetes."
+    },
+    "note": "Bio T D Plus includes HbA1c, providing additional insight into long-term glucose management compared to Bio T Plus."
+  },
+  {
+    "name": "AYUSHYA PANEL 1",
+    "originalPrice": 1390,
+    "discountedPrice": 590,
+    "parameters": [
+      "Hb",
+      "TLC",
+      "DLC",
+      "Glucose Fasting",
+      "Cholesterol Total",
+      "Bilirubin",
+      "Protein Total",
+      "Blood Urea Nitrogen (BUN)",
+      "Urea",
+      "Creatinine",
+      "Uric Acid",
+      "Thyroid Stimulating Hormone (TSH)"
+    ],
+    "testDescriptions": {
+      "Hb": "Hemoglobin (Hb) measures red blood cell levels, essential for diagnosing anemia and assessing overall blood health.",
+      "TLC": "Total Leukocyte Count (TLC) evaluates white blood cell levels, aiding in diagnosing infections, inflammation, and immune disorders.",
+      "DLC": "Differential Leukocyte Count (DLC) identifies white blood cell types, helping diagnose specific infections, immune disorders, and blood conditions.",
+      "Glucose Fasting": "Fasting Blood Glucose tests measure sugar levels after fasting, crucial for diagnosing and managing diabetes and metabolic disorders.",
+      "Cholesterol Total": "Total Cholesterol measures overall cholesterol levels, assessing cardiovascular risk and guiding prevention of heart disease and stroke.",
+      "Bilirubin": "Bilirubin test evaluates liver function by measuring bilirubin levels, crucial for diagnosing liver disorders and jaundice.",
+      "Protein Total": "Total Protein measures blood protein levels, helping diagnose liver and kidney diseases and assess nutritional status.",
+      "Blood Urea Nitrogen (BUN)": "BUN tests kidney function by evaluating waste levels in the blood, essential for diagnosing and managing kidney disease.",
+      "Urea": "Urea test measures kidney function and waste elimination, aiding in diagnosing renal disorders and monitoring kidney health.",
+      "Creatinine": "Creatinine test evaluates kidney function by measuring waste levels, crucial for diagnosing and managing renal conditions.",
+      "Uric Acid": "Uric Acid test identifies high levels that can lead to gout and kidney stones, assisting in effective management and prevention.",
+      "Thyroid Stimulating Hormone (TSH)": "TSH test evaluates thyroid gland function, helping diagnose hypo- or hyperthyroidism and manage related health conditions."
+    },
+    "faqs": {
+      "purpose": "The Ayushya Panel - 1 helps detect and manage conditions such as diabetes, cardiovascular disease, liver disorders, kidney disease, thyroid dysfunction, and anemia, ensuring a thorough evaluation of overall health.",
+      "importance": "Provides essential insights into multiple health aspects, aiding in the early detection and management of common and chronic conditions.",
+      "whoShouldGetTested": "Ideal for individuals seeking a basic health checkup, including those with symptoms of anemia, diabetes, cardiovascular issues, or thyroid disorders."
+    }
+  },
+  {
+    "name": "AYUSHYA PANEL 2",
+    "originalPrice": 3500,
+    "discountedPrice": 990,
+    "parameters": [
+      "CBC",
+      "Differential Leukocyte Count",
+      "ESR",
+      "Glucose Fasting",
+      "Cholesterol Total",
+      "Triglycerides Serum",
+      "Bilirubin Total",
+      "SGPT",
+      "SGOT",
+      "Protein Total Serum",
+      "Blood Urea",
+      "Creatinine",
+      "Urea",
+      "Uric Acid",
+      "TSH"
+    ],
+    "testDescriptions": {
+      "CBC": "Complete Blood Count (CBC) assesses overall health by measuring red and white blood cells, helping diagnose anemia, infections, and other blood disorders.",
+      "Differential Leukocyte Count": "Differential Leukocyte Count identifies white blood cell types, crucial for diagnosing infections, immune system disorders, and evaluating overall immune health.",
+      "ESR": "Erythrocyte Sedimentation Rate (ESR) measures inflammation levels in the body, aiding in diagnosing and monitoring inflammatory diseases and conditions like arthritis and infections.",
+      "Glucose Fasting": "Fasting Blood Glucose tests sugar levels after fasting, essential for diagnosing diabetes and managing metabolic health and related complications.",
+      "Cholesterol Total": "Total Cholesterol measures overall cholesterol levels, helping assess cardiovascular risk and guiding prevention of heart disease and stroke.",
+      "Triglycerides Serum": "Triglycerides Serum test measures fat levels in the blood, crucial for evaluating cardiovascular risk and managing metabolic syndrome.",
+      "Bilirubin Total": "Total Bilirubin evaluates liver function and helps diagnose liver disorders, jaundice, and bile duct issues, supporting effective treatment.",
+      "SGPT": "Serum Glutamic Pyruvic Transaminase (SGPT) measures liver enzyme levels, crucial for detecting liver damage and monitoring liver health and function.",
+      "SGOT": "Serum Glutamic Oxaloacetic Transaminase (SGOT) assesses liver health by measuring enzyme levels, helping diagnose liver disorders and monitor treatment progress.",
+      "Protein Total Serum": "Total Protein Serum test measures blood protein levels, helping diagnose liver and kidney diseases and assessing overall nutritional status.",
+      "Blood Urea": "Blood Urea evaluates kidney function by measuring waste products, essential for diagnosing and managing renal disorders.",
+      "Creatinine": "Creatinine test measures kidney function by assessing waste levels, crucial for diagnosing kidney diseases and monitoring renal health.",
+      "Urea": "Urea test measures waste elimination efficiency, aiding in diagnosing kidney function issues and monitoring renal health.",
+      "Uric Acid": "Uric Acid test identifies high levels linked to gout and kidney stones, helping manage and prevent these conditions effectively.",
+      "TSH": "Thyroid Stimulating Hormone (TSH) evaluates thyroid function, diagnosing hypo- or hyperthyroidism and managing related health conditions for optimal thyroid health."
+    },
+    "faqs": {
+      "purpose": "The Ayushya Panel - 2 offers a thorough health checkup by assessing blood components, glucose, cholesterol, liver and kidney function, and thyroid health for comprehensive disease detection and management.",
+      "differenceFromPanel1": "Ayushya Panel - 2 includes ESR for inflammation assessment and Triglycerides Serum for a deeper cardiovascular risk evaluation. Additionally, it adds SGPT and SGOT for detailed liver function analysis, and provides a more comprehensive thyroid function assessment with TSH.",
+      "whoShouldGetTested": "Recommended for those needing a comprehensive evaluation of inflammation, liver, cardiovascular, and kidney health, or experiencing symptoms related to these areas."
+    }
+  },
+  {
+    "name": "AYUSHYA PANEL 3",
+    "originalPrice": 3500,
+    "discountedPrice": 990,
+    "parameters": [
+      "CBC",
+      "Differential Leukocyte Count",
+      "ESR",
+      "Glucose Fasting",
+      "Cholesterol Total",
+      "Triglycerides Serum",
+      "LFT",
+      "LDH",
+      "Blood Urea Nitrogen (BUN)",
+      "Creatinine",
+      "Urea",
+      "Uric Acid",
+      "TSH",
+      "Calcium",
+      "Vitamin B12",
+      "Urine Routine"
+    ],
+    "testDescriptions": {
+      "CBC": "Complete Blood Count (CBC) assesses overall blood health by measuring red and white blood cells, identifying anemia, infections, and various blood disorders for effective management.",
+      "Differential Leukocyte Count": "Differential Leukocyte Count identifies white blood cell types, aiding in diagnosing specific infections, immune disorders, and monitoring immune system health.",
+      "ESR": "Erythrocyte Sedimentation Rate (ESR) measures inflammation levels in the body, helping diagnose and monitor inflammatory diseases such as arthritis and chronic infections.",
+      "Glucose Fasting": "Fasting Blood Glucose tests blood sugar levels after fasting, crucial for diagnosing diabetes and managing glucose-related health issues.",
+      "Cholesterol Total": "Total Cholesterol measures overall cholesterol levels, assessing cardiovascular risk and guiding prevention strategies for heart disease and stroke.",
+      "Triglycerides Serum": "Triglycerides Serum test measures fat levels in the blood, essential for evaluating cardiovascular health and managing metabolic syndrome risks.",
+      "LFT": "Liver Function Tests (LFT) assesses liver health by measuring enzymes and proteins, crucial for diagnosing liver disorders and monitoring liver function.",
+      "LDH": "Lactate Dehydrogenase (LDH) measures enzyme levels related to tissue damage, assisting in diagnosing and monitoring various health conditions and diseases.",
+      "Blood Urea Nitrogen (BUN)": "BUN evaluates kidney function by measuring waste levels in the blood, crucial for diagnosing and managing kidney disease and monitoring renal health.",
+      "Creatinine": "Creatinine test measures kidney function by assessing waste product levels, essential for diagnosing renal disorders and tracking kidney health.",
+      "Urea": "Urea test measures the efficiency of waste elimination by the kidneys, aiding in diagnosing renal function issues and managing kidney health.",
+      "Uric Acid": "Uric Acid test identifies high levels associated with gout and kidney stones, assisting in managing and preventing these conditions.",
+      "TSH": "Thyroid Stimulating Hormone (TSH) evaluates thyroid gland function, helping diagnose hypo- or hyperthyroidism and manage thyroid-related health conditions effectively.",
+      "Calcium": "Calcium test measures levels in the blood, important for assessing bone health, diagnosing osteoporosis, and managing parathyroid disorders.",
+      "Vitamin B12": "Vitamin B12 test assesses vitamin levels essential for nerve function and red blood cell production, aiding in diagnosing deficiencies and related health issues.",
+      "Urine Routine": "Urine Routine test analyzes urine composition, helping diagnose urinary tract infections, kidney disease, and overall metabolic health."
+    },
+    "faqs": {
+      "purpose": "The Ayushya Panel - 3 provides a thorough health assessment by evaluating blood, glucose, cholesterol, liver, kidney, thyroid function, and vitamins, ensuring comprehensive disease detection and effective management.",
+      "differenceFromPanel1And2": "Ayushya Panel - 3 includes LFT and LDH for a detailed liver function analysis and more extensive kidney function tests compared to Panels 1 and 2. It also adds Calcium and Vitamin B12 assessments for a broader evaluation of bone health and nutritional status, and incorporates a Urine Routine test for complete urinary health assessment.",
+      "whoShouldGetTested": "It is best for individuals seeking an in-depth health assessment, including liver, kidney, thyroid function, and nutrient levels, or those with complex health concerns or chronic conditions."
     }
   }
 ]

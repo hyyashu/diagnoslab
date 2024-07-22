@@ -33,7 +33,6 @@ function Footer() {
                         className="h-28 w-28"
                         width={28}
                         height={28}
-                        priority
                     />
 
                     <div className="flex flex-wrap gap-4">
@@ -41,7 +40,6 @@ function Footer() {
                             {name: "Feedback", url:"/",icon: "Feedback"},
                             {name: "FAQ's", url:"/", icon: "FAQ"},
                             {name: "Careers", url:"/careers", icon: "Careers"},
-                            {name: "Franchisee", url:"/", icon: "Franchisee"},
                         ].map((link) => (
                             <div key={link.name} className="flex flex-col items-center">
                                 <a key={link.name} href={link.url} className="text-sm">
@@ -51,7 +49,7 @@ function Footer() {
                         ))}
                     </div>
                     <div className="flex flex-col items-end">
-                        <h3 className="text-lg font-semibold">Subscribe to WhatsApp</h3>
+                        <h3 className="text-lg font-semibold">Connect on WhatsApp</h3>
                         <div className="mt-2 flex">
 
                         </div>
