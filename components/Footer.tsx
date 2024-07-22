@@ -12,12 +12,10 @@ function Footer() {
                         {[
                             "Jamshedpur",
                             "Adityapur",
-                            "Ranchi",
-                            "Dhanband",
-                            "Bokara",
+                            "Bokaro",
+                            "Dhanbad",
                             "Dumka",
-                            "Deoghar",
-                            "Chaibasa",
+                            "Deoghar"
                         ].map((city) => (
                             <span key={city}>{city}</span>
                         ))}

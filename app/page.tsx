@@ -4,6 +4,7 @@ import Image from 'next/image'
 import TestCard, {CardProps} from '../sections/TestCard';
 import {useEffect, useState} from "react";
 import CallBackForm from "@/components/CallBackForm";
+import Whyus from "@/sections/Whyus";
 
 
 export default function Home() {
@@ -47,6 +48,9 @@ export default function Home() {
                     />
                    </div>
                 ))}
+            </section>
+            <section>
+                <Whyus/>
             </section>
         </main>
     );

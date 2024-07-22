@@ -16,9 +16,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors:{
-        "DiagnosRed": "#e53935",
-        "DiagnosGreen": "#e53935",
-
+        "DiagnosRed": "#E53935",
+        "DiagnosGreen": "#3DA060",
+        "NarayanaBlue2": "#35519C",
       }
     },
   },
