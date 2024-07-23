@@ -15,7 +15,6 @@ export default function Home() {
             const response = await fetch('./data.json');
             const data = await response.json();
             setTests(data.slice(0, 4)); // Limit items
-            console.log(data);
         };
         fetchData();
     },[]);
@@ -33,20 +32,20 @@ export default function Home() {
                     <CallBackForm/>
                 </section>
             </div>
-            <div className=" text-center pt-4">
+            <div className="text-center pt-4">
                 <h2 className="text-xl font-bold">Most Preferred Wellness Packages</h2>
             </div>
             <section className="flex flex-wrap p-4 md:p-8">
                 {tests.map((test, index) => (
-                   <div className=" p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4" key={index}>
-                    <TestCard
-                        key={index}
-                        name={test.name}
-                        originalPrice={test.originalPrice}
-                        discountedPrice={test.discountedPrice}
-                        parameters={test.parameters}
-                    />
-                   </div>
+                    <div className=" p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4" key={index}>
+                        <TestCard
+                            key={index}
+                            name={test.name}
+                            originalPrice={test.originalPrice}
+                            discountedPrice={test.discountedPrice}
+                            parameters={test.parameters}
+                        />
+                    </div>
                 ))}
             </section>
             <section>

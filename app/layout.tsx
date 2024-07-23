@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { Montserrat } from "next/font/google";
+import "../public/icons/icons.css"
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";

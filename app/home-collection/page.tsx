@@ -3,12 +3,13 @@ import useFetch from '../hooks/useFetch';
 import Image from "next/image";
 
 const HomeCollection = () => {
-    const { data, loading, error } = useFetch('/home-collection.json');
+    const {data, loading, error} = useFetch('/home-collection.json');
 
-    if (loading) return <div>Loading...</div>;
+    if (loading) return <div className="loader"></div>
     if (error) return <div>Error: {error.message}</div>;
     return (
         <>
+
             <div className="flex flex-wrap items-center justify-center mx-auto p-4 text-center border-2">
                 <div className="border-2 rounded-lg border-DiagnosRed p-4">
                     <h1 className="text-4xl font-bold ">Get your tests done from the comfort of your home.
@@ -67,6 +68,7 @@ const HomeCollection = () => {
                     </p>
                 </footer>
             </div>
+            <div></div>
         </>
     );
 };

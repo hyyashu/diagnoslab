@@ -1,0 +1,18 @@
+.fa-whatsapp::before {
+    content: url('whatsapp.svg');
+}
+.icon-instagram::before {
+    content: url('instagram.svg');
+}
+.icon-facebook::before {
+    content: url('facebook.svg');
+}
+.icon-twitter::before {
+    content: url('twitter.svg');
+}
+.icon-youtube::before {
+    content: url('youtube.svg');
+}
+.icon-phone::before {
+    content: url('phone.svg');
+}

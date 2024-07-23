@@ -10,7 +10,7 @@ const useFetch = (url: string) => {
             try {
                 const response = await fetch(url);
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 const json = await response.json();
                 setData(json);
