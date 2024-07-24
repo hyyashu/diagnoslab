@@ -23,7 +23,7 @@ const PackageName: FC = () => {
     const packageName = decodeURIComponent((pathname.split('/').pop()) as string).toLowerCase();
 
 
-    const { data, loading, error } = useFetch('/data.json');
+    const { data, loading, error } = useFetch<Package[]>('/data.json');
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>
     const packageData = data?.find((pkg: Package) => pkg.name.toLowerCase() === packageName);
