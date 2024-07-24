@@ -1,13 +1,8 @@
 "use client"
-import useFetch from '@/hooks/useFetch';
 import Image from "next/image";
 import HowitWorks from "@/components/sections/HowitWorks";
 
 const HomeCollection = () => {
-    const {data, loading, error} = useFetch('/home-collection.json');
-
-    if (loading) return <div className="loader"></div>
-    if (error) return <div>Error: {error.message}</div>;
     return (
         <>
             <div className="flex-col flex-wrap justify-center m-3 p-4">

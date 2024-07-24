@@ -5,7 +5,7 @@ export interface CardProps {
     name: string;
     originalPrice: number;
     discountedPrice: number;
-    parameters: number[];
+    parameters: number;
 }
 
 const TestCard: React.FC<CardProps> = ({

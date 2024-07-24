@@ -9,7 +9,7 @@ import { Key } from "react";
 
 
 export default function Home() {
-    const {data, loading, error} = useFetch('/data.json');
+    const {data, loading, error} = useFetch<any>('/data.json');
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>
     const packageData = data.slice(0, 4);
@@ -38,7 +38,7 @@ export default function Home() {
                     name: string;
                     originalPrice: number;
                     discountedPrice: number;
-                    parameters: number[];
+                    parameters: number;
                 }, index: Key | null | undefined) => (
                     <div className=" p-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4" key={index}>
                         <TestCard
