@@ -8,8 +8,7 @@ function Header() {
             <Image src="/DiagnosLabLogo.svg" alt="Diagnos Lab Logo" className="" width={150} height={24} priority/>
         </div>
         <div className="md:block content-center hidden">
-            <span className="mr-3 "> Customer Care 84048 02201</span>
-            <span className="mr-3">Upload Prescription</span>
+            <span className="mr-3 ">Customer Care 84048 02201</span>
         </div>
     </div>
 </>

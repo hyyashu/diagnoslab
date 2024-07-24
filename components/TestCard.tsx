@@ -5,7 +5,7 @@ export interface CardProps {
     name: string;
     originalPrice: number;
     discountedPrice: number;
-    parameters: string[];
+    parameters: number[];
 }
 
 const TestCard: React.FC<CardProps> = ({
@@ -24,12 +24,13 @@ const TestCard: React.FC<CardProps> = ({
             {/*/>*/}
             <div className="rounded-lg p-4 text-white">
                 <h3 className="font-bold text-xl">{name}</h3>
-                <h4 className="font-semibold">Parameters Covered:</h4>
+                <h4 className="font-semibold">Parameters Covered:{parameters}</h4>
                 <div className="flex flex-wrap items-center justify-evenly mb-4">
                     <p className="line-through text-sm">{`₹${originalPrice}`}</p>
                     <p className="font-bold text-2xl">{`₹${discountedPrice}`}</p>
                 </div>
                 <button className="bg-white p-2 w-full text-black rounded">Book Now</button>
+                <a href={`/packages/${name}`}>More</a>
             </div>
         </div>
     );

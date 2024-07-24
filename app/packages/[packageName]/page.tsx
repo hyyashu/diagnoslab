@@ -1,13 +1,14 @@
 'use client'
 import { usePathname } from 'next/navigation';
-import useFetch from "@/app/hooks/useFetch"
+import useFetch from "@/hooks/useFetch"
 import { FC } from 'react';
+
 
 interface Package {
     name: string;
     originalPrice: number;
     discountedPrice: number;
-    parameters: string[];
+    parameters: number;
     testDescriptions: { [key: string]: string };
     faqs: {
         purpose: string;
@@ -16,10 +17,11 @@ interface Package {
     };
 }
 
-const packageName: FC = () => {
+const PackageName: FC = () => {
     const pathname = usePathname();
+    console.log(pathname);
     const packageName = decodeURIComponent((pathname.split('/').pop()) as string).toLowerCase();
-    console.log(packageName)
+
 
     const { data, loading, error } = useFetch('/data.json');
     if (loading) return <p>Loading...</p>;
@@ -28,53 +30,65 @@ const packageName: FC = () => {
     if (!packageData) return <p>Package was not found</p>;
     return (
         <>
-        <div className="flex flex-wrap m-10 gap-4">
-            <div className="flex flex-wrap w-[70%]">
+        <div className="flex flex-col md:flex-row md:h-full m-5 gap-4">
+            <div className="flex flex-wrap w-[15%]">
+                <div className="flex flex-wrap bg-DiagnosGreen w-full border rounded-lg p-2">
+                    <a className="bg-DiagnosGreen text-white  p-2">Package Overview</a>
+                </div>
+            </div>
+            <div className="w-full md:w-[70%]">
                 <div className="flex-col flex-wrap w-full border rounded-lg p-2">
                     <h1 className="text-xl font-bold">{packageData.name}</h1>
-                    <div className="flex flex-wrap  justify-between">
+                    <div className="flex flex-wrap text-xs text-DiagnosGreen  justify-between">
                         <p>Gender For : Male,Female</p>
                         <p>Report Tat : Same day</p>
                         <p>Over Night : Fasting Required</p>
                         <p>Sample Type : 2ML WB EDT</p>
                     </div>
                 </div>
-                <div className="flex-col flex-wrap my-3 w-full items-center border rounded-lg p-2">
+                <div className="flex-col flex-wrap w-full items-center border rounded-lg p-2 my-3">
                     <h1 className="text-xl font-bold">Test Overview</h1>
                     <div className="flex flex-wrap w-full justify-center">
                         <div>Gender For : Male,Female</div>
                     </div>
                 </div>
                 <div className="flex flex-wrap w-full items-center text-center border rounded-lg p-2">
-                    <h4 className="text-xl font-bold">Test Parameters</h4>
-                    <div className="flex flex-wrap w-full">
-                        {packageData.parameters.map((param: string, index: number) =>
-                            (<p className="m-1 p-1 border-DiagnosRed border text-xs rounded">{param}</p>))}
-                    </div>
+                    <h4 className="text-xl font-bold">Test Parameters {packageData.parameters}</h4>
+                    {/*<div className="flex flex-wrap w-full">*/}
+                    {/*    {packageData.parameters.map((param: string, index: number) =>*/}
+                    {/*        (<p key={index} className="m-1 p-1 border-DiagnosRed border text-xs rounded">{param}</p>))}*/}
+                    {/*</div>*/}
                 </div>
+                <div className="flex flex-wrap w-full border rounded-lg p-2 my-3">
                 <p className="border rounded p-2 text-DiagnosRed">Purpose:
                     <span className="text-DiagnosGreen"> {packageData.faqs.purpose}</span></p>
                 <p className="border rounded p-2 text-DiagnosRed">Importance:
                     <span className="text-DiagnosGreen"> {packageData.faqs.importance}</span></p>
                 <p className="border rounded p-2 text-DiagnosRed">Who Should Get Tested:
                     <span className="text-DiagnosGreen"> {packageData.faqs.whoShouldGetTested}</span></p>
-                <h2>Test Descriptions</h2>
-                <ul>
-                    {Object.entries(packageData.testDescriptions).map(([q, a], index) => (
-                        <li key={index}>
-                            <strong>{q}</strong>: {a}
-                        </li>
-                    ))}
-                </ul>
+                </div>
+                <div className="flex flex-wrap w-full border rounded-lg p-2 my-3">
+                    <ul>
+                        {Object.entries(packageData.testDescriptions).map(([ques, ans,], index) => (
+                            <li key={index}>
+                                <strong>{ques}</strong>: {ans}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
-            <div className="flex flex-wrap w-[25%]">
-                <div className="flex-col flex-wrap w-full">
-                    <p>Original Price: {packageData.originalPrice}</p>
-                    <p>Discounted Price: {packageData.discountedPrice}</p>
-                    <div className="text-center w-full border rounded pb-2">
-                        <p className="font-bold bg-gray-300">Can't decide the test?</p>
-                        <p className="p-3">Schedule a blood test or health checkup and have the convenience of being tested in the comfort of your own home.</p>
-                        <button className="p-2 bg-DiagnosRed text-white rounded-full">Call Now</button>
+            {/*Left Section*/}
+            <div className="w-full md:w-[30%]">
+                <div className="text-center w-full border rounded pb-2">
+                    <p className="font-bold bg-DiagnosRed text-white">Book Now</p>
+                    <p className="p-3">Schedule a blood test or health checkup and have the convenience of being tested in the comfort of your own home.</p>
+                    <div className="flex-col flex-wrap w-full">
+                        <p>Exclusive Offer</p>
+                        <div className="flex flex-wrap justify-evenly">
+                            <p className="line-through">₹{packageData.originalPrice}</p>
+                            <p className="text-DiagnosGreen text-xl font-bold">₹{packageData.discountedPrice}</p>
+                        </div>
+                        <button className="p-2 bg-DiagnosRed text-white rounded-full">Get Instant Callback Now</button>
                     </div>
                 </div>
             </div>
@@ -83,4 +97,4 @@ const packageName: FC = () => {
     );
 };
 
-export default packageName;
+export default PackageName;

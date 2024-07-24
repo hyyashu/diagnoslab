@@ -3,9 +3,9 @@ import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { Montserrat } from "next/font/google";
 import "../public/icons/icons.css"
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/sections/Navbar";
+import Header from "@/components/sections/Header";
+import Footer from "@/components/sections/Footer";
 
 const font = Montserrat({
   subsets: ["latin"],

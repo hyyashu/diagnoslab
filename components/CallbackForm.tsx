@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CallBackForm = () => {
+const CallbackForm = () => {
     return (
         <div className="p-5 rounded bg-white w-[300px]">
             <h2 className="text-red-700 mb-5 text-center">Request a Callback</h2>
@@ -27,4 +27,4 @@ const CallBackForm = () => {
     );
 };
 
-export default CallBackForm;
+export default CallbackForm;

@@ -1,6 +1,7 @@
 "use client"
-import useFetch from '../hooks/useFetch';
+import useFetch from '@/hooks/useFetch';
 import Image from "next/image";
+import HowitWorks from "@/components/sections/HowitWorks";
 
 const HomeCollection = () => {
     const {data, loading, error} = useFetch('/home-collection.json');
@@ -9,16 +10,21 @@ const HomeCollection = () => {
     if (error) return <div>Error: {error.message}</div>;
     return (
         <>
-
-            <div className="flex flex-wrap items-center justify-center mx-auto p-4 text-center border-2">
-                <div className="border-2 rounded-lg border-DiagnosRed p-4">
-                    <h1 className="text-4xl font-bold ">Get your tests done from the comfort of your home.
-                        <p className="text-DiagnosGreen">Fast, Reliable and Secure!</p></h1>
-                    <button className="mt-4 px-6 py-3 bg-DiagnosRed text-white rounded-full">Schedule Your Collection
+            <div className="flex-col flex-wrap justify-center m-3 p-4">
+                <div className="flex flex-wrap">
+                    <Image
+                        src="/2.png"
+                        width={500}
+                        height={300}
+                        alt="hero_banner"
+                        className="rounded-lg"
+                    />
+                    <p className="text-DiagnosGreen text-xl font-bold m-3">Fast, Reliable and Secure!</p>
+                    <button className="px-6 py-3 bg-DiagnosRed text-white rounded-full">Book your Test
                     </button>
                 </div>
-                <div className="my-8">
-                    <h2 className="text-2xl font-semibold mb-4">Why Choose Our Home Collection Services?</h2>
+                <div className="flex-col flex-wrap">
+                    <h2 className="text-xl font-bold mb-4 underline decoration-wavy underline-offset-8">Why Choose Our Services?</h2>
                     <ul className="list-disc list-inside space-y-2">
                         <li className="flex items-center justify-center text-xl font-semibold">
                             <span className="mr-2 text-DiagnosGreen">✔</span>Affordable Health Tests
@@ -38,37 +44,14 @@ const HomeCollection = () => {
                     </ul>
                 </div>
                 <div className="flex flex-wrap items-center justify-center my-8">
-                    <h2 className="text-2xl font-semibold mb-4">How Our Home Collection Service Works?</h2>
-                    <Image
-                        src="/how-it-works.png"
-                        width={1024}
-                        height={1024}
-                        alt="hero_banner"
-                        className="rounded-lg "
-                    />
+                  <HowitWorks></HowitWorks>
                 </div>
-                <div className="my-8">
-                    <h2 className="text-2xl font-semibold mb-4">Testimonials</h2>
-                    {/* Add testimonials here */}
-                </div>
-                <div className="my-8">
-                    <h2 className="text-2xl font-semibold mb-4">FAQ</h2>
-                    {data.faq.map((faqItem: any, index: number) => (
-                        <div key={index} className="mb-4">
-                            <h3 className="text-xl font-medium">{faqItem.question}</h3>
-                            <p>{faqItem.answer}</p>
-                        </div>
-                    ))}
-                </div>
-                <footer className="text-center py-6">
+                <div className="text-center py-6">
                     <h3 className="text-xl font-bold mb-4">Ready to Book Your Home Collection?</h3>
-                    <p>
-                        Book your appointment <a href="/book" className="text-blue-500 underline">here</a> or call us at
-                        +91 8404802201/14
+                    <p>Book your appointment <a href="/book" className="text-blue-500 underline">here</a> or call us at +91 84048 02201/14
                     </p>
-                </footer>
+                </div>
             </div>
-            <div></div>
         </>
     );
 };

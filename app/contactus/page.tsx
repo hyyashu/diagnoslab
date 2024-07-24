@@ -5,9 +5,9 @@ const ContactUs = () => {
         <>
         <div>
             <div className="flex flex-col items-center text-center py-8 px-4">
-                <h1 className="text-2xl font-bold text-red-600 mb-8">
+                <p className="text-2xl font-bold text-red-600 mb-8">
                     Simple Steps to get your Test done!
-                </h1>
+                </p>
                 <div className="flex flex-wrap justify-center items-center space-x-4 md:space-x-4 space-y-4 md:space-y-0">
                     <div className="flex flex-col items-center w-full md:w-auto">
                         <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-2">

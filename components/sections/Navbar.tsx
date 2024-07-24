@@ -10,19 +10,19 @@ const Nav = () => {
                                 <a className="mr-3 ml-3 text-white" href="/">Home</a>
                             </li>
                             <li className="">
-                                <a className="mr-3 ml-3 text-white" href="/">Blogs</a>
+                                <a className="mr-3 ml-3 text-white" href="/blogs">Blogs</a>
                             </li>
                             <li className="">
-                                <a className="mr-3 ml-3 text-white" href="/">Tests</a>
+                                <a className="mr-3 ml-3 text-white" href="/Tests">Tests</a>
                             </li>
                             <li className="">
-                                <a className="mr-3 ml-3 text-white" href="/">Packages</a>
+                                <a className="mr-3 ml-3 text-white" href="/Packages">Packages</a>
                             </li>
                             <li className="">
-                                <a className="mr-3 ml-3 text-white" href="/">X-Ray & Scans</a>
+                                <a className="mr-3 ml-3 text-white" href="/Xray">X-Ray & Scans</a>
                             </li>
                             <li className="">
-                                <a className="mr-3 ml-3 text-white" href="/">Book Test</a>
+                                <a className="mr-3 ml-3 text-white" href="/book-now">Book Test</a>
                             </li>
                         </ul>
                     </div>
