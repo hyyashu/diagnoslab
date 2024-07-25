@@ -1,22 +1,31 @@
-import { Client, LocalAuth } from 'whatsapp-web.js';
+import {Client, LocalAuth, NoAuth} from 'whatsapp-web.js';
 import qrcode from 'qrcode-terminal';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// import path from 'path';
+// import { fileURLToPath } from 'url';
+//
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 let clientInstance: Client | null = null;
 let clientReady = false;
-const sessionPath = path.join(__dirname, 'session');
+// const sessionPath = path.join(__dirname, 'session');
 
 export const getClient = async () => {
+    // if (!clientInstance) {
+    //     clientInstance = new Client({
+    //         authStrategy: new LocalAuth({
+    //             dataPath: sessionPath
+    //         })
+    //     });
     if (!clientInstance) {
         clientInstance = new Client({
-            authStrategy: new LocalAuth({
-                dataPath: sessionPath
-            })
+            authStrategy: new NoAuth()
         });
+
+
+
+
+
 
         clientInstance.on('qr', (qr) => {
             console.log('QR RECEIVED', qr);
