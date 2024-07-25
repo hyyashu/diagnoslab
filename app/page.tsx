@@ -1,6 +1,6 @@
 'use client'
 import "./globals.css";
-import useFetch from "@/hooks/useFetch"
+import useFetch from "@/utils/useFetch"
 import Image from 'next/image'
 import TestCard from '@/components/TestCard';
 import CallbackForm from "@/components/CallbackForm";

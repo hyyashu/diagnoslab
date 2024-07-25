@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "@/components/sections/Navbar";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
+import React from "react";
 
 const font = Montserrat({
   subsets: ["latin"],

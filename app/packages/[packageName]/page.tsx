@@ -1,6 +1,6 @@
 'use client'
 import { usePathname } from 'next/navigation';
-import useFetch from "@/hooks/useFetch"
+import useFetch from "@/utils/useFetch"
 import { FC } from 'react';
 
 
