@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { Montserrat } from "next/font/google";
 import "../public/icons/icons.css"
+import '../public/fonts/fontawesome/css/all.css';
 import "./globals.css";
 import Navbar from "@/components/sections/Navbar";
 import Header from "@/components/sections/Header";

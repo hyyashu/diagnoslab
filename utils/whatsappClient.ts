@@ -29,7 +29,7 @@ export const getClient = async () => {
 
         clientInstance.on('qr', (qr) => {
             console.log('QR RECEIVED', qr);
-            // console.log(sessionPath)
+`            // console.log(sessionPath)`
             qrcode.generate(qr, {small: true});
         });
 

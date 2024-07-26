@@ -1,8 +1,10 @@
-'use client'
-import { usePathname } from 'next/navigation';
-import useFetch from "@/utils/useFetch"
-import { FC } from 'react';
+'use client';
 
+import { usePathname } from 'next/navigation';
+import useFetch from "@/utils/useFetch";
+import { FC } from 'react';
+import WhyUs from "@/components/sections/WhyUs";
+import CallbackForm from "@/components/CallbackForm";
 
 interface Package {
     name: string;
@@ -19,80 +21,100 @@ interface Package {
 
 const PackageName: FC = () => {
     const pathname = usePathname();
-    console.log(pathname);
     const packageName = decodeURIComponent((pathname.split('/').pop()) as string).toLowerCase();
-
-
     const { data, loading, error } = useFetch<Package[]>('/data.json');
     if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error.message}</p>
+    if (error) return <p>Error: {error.message}</p>;
     const packageData = data?.find((pkg: Package) => pkg.name.toLowerCase() === packageName);
     if (!packageData) return <p>Package was not found</p>;
+
     return (
         <>
-        <div className="flex flex-col md:flex-row md:h-full m-5 gap-4">
-            <div className="flex flex-wrap w-[15%]">
-                <div className="flex flex-wrap bg-DiagnosGreen w-full border rounded-lg p-2">
-                    <a className="bg-DiagnosGreen text-white  p-2">Package Overview</a>
-                </div>
-            </div>
-            <div className="w-full md:w-[70%]">
-                <div className="flex-col flex-wrap w-full border rounded-lg p-2">
-                    <h1 className="text-xl font-bold">{packageData.name}</h1>
-                    <div className="flex flex-wrap text-xs text-DiagnosGreen  justify-between">
-                        <p>Gender For : Male,Female</p>
-                        <p>Report Tat : Same day</p>
-                        <p>Over Night : Fasting Required</p>
-                        <p>Sample Type : 2ML WB EDT</p>
+            <div className="flex flex-col md:flex-row md:gap-8 p-5">
+                {/* Left Section */}
+                <div className="w-full md:w-[15%]">
+                    <div className="bg-DiagnosGreen text-white p-4 rounded-lg shadow-md">
+                        <a className="block text-center font-bold text-lg">Package Overview</a>
                     </div>
                 </div>
-                <div className="flex-col flex-wrap w-full items-center border rounded-lg p-2 my-3">
-                    <h1 className="text-xl font-bold">Test Overview</h1>
-                    <div className="flex flex-wrap w-full justify-center">
-                        <div>Gender For : Male,Female</div>
+                {/* Center Section */}
+                <div className="w-full md:w-[70%]">
+                    <div className="bg-white border rounded-lg p-4 shadow-md mb-4">
+                        <h1 className="text-2xl font-bold mb-2">{packageData.name}</h1>
                     </div>
-                </div>
-                <div className="flex flex-wrap w-full items-center text-center border rounded-lg p-2">
-                    <h4 className="text-xl font-bold">Test Parameters {packageData.parameters}</h4>
-                    {/*<div className="flex flex-wrap w-full">*/}
-                    {/*    {packageData.parameters.map((param: string, index: number) =>*/}
-                    {/*        (<p key={index} className="m-1 p-1 border-DiagnosRed border text-xs rounded">{param}</p>))}*/}
-                    {/*</div>*/}
-                </div>
-                <div className="flex flex-wrap w-full border rounded-lg p-2 my-3">
-                <p className="border rounded p-2 text-DiagnosRed">Purpose:
-                    <span className="text-DiagnosGreen"> {packageData.faqs.purpose}</span></p>
-                <p className="border rounded p-2 text-DiagnosRed">Importance:
-                    <span className="text-DiagnosGreen"> {packageData.faqs.importance}</span></p>
-                <p className="border rounded p-2 text-DiagnosRed">Who Should Get Tested:
-                    <span className="text-DiagnosGreen"> {packageData.faqs.whoShouldGetTested}</span></p>
-                </div>
-                <div className="flex flex-wrap w-full border rounded-lg p-2 my-3">
-                    <ul>
-                        {Object.entries(packageData.testDescriptions).map(([ques, ans,], index) => (
-                            <li key={index}>
-                                <strong>{ques}</strong>: {ans}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-            {/*Left Section*/}
-            <div className="w-full md:w-[30%]">
-                <div className="text-center w-full border rounded pb-2">
-                    <p className="font-bold bg-DiagnosRed text-white">Book Now</p>
-                    <p className="p-3">Schedule a blood test or health checkup and have the convenience of being tested in the comfort of your own home.</p>
-                    <div className="flex-col flex-wrap w-full">
-                        <p>Exclusive Offer</p>
-                        <div className="flex flex-wrap justify-evenly">
-                            <p className="line-through">₹{packageData.originalPrice}</p>
-                            <p className="text-DiagnosGreen text-xl font-bold">₹{packageData.discountedPrice}</p>
+                    <div className="bg-white border rounded-lg p-6 shadow-md mb-4 max-w-4xl mx-auto">
+                        <div className="flex flex-col md:flex-row md:space-x-4 mb-4">
+                            <div className="flex items-center mb-2 md:mb-0">
+                                <i className="fa-solid fa-genderless text-blue-500 text-xl mr-3"></i>
+                                <p className="text-gray-700">Gender For: Male, Female</p>
+                            </div>
+                            <div className="flex items-center mb-2 md:mb-0">
+                                <i className="fa-solid fa-clock text-blue-500 text-xl mr-3"></i>
+                                <p className="text-gray-700">Report TAT: Same day</p>
+                            </div>
+                            <div className="flex items-center mb-2 md:mb-0">
+                                <i className="fa-solid fa-moon text-blue-500 text-xl mr-3"></i>
+                                <p className="text-gray-700">Overnight: Fasting Required</p>
+                            </div>
+                            <div className="flex items-center mb-2 md:mb-0">
+                                <i className="fa-solid fa-flask text-blue-500 text-xl mr-3"></i>
+                                <div>
+                                <p className="text-gray-700">Sample Type: 2ML WB EDT</p>
+                                </div>
+                            </div>
                         </div>
-                        <button className="p-2 bg-DiagnosRed text-white rounded-full">Get Instant Callback Now</button>
+                        <div className="flex items-center">
+                            <i className="fa-solid fa-list-check text-blue-500 text-xl mr-3"></i>
+                            <p className="text-xl font-bold text-gray-800">
+                                Parameters Included: {packageData.parameters}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="bg-white border rounded-lg p-1 shadow-md mb-4">
+                        <p className="  p-2 text-DiagnosRed mb-2">
+                            Purpose: <span className="text-DiagnosGreen">{packageData.faqs.purpose}</span>
+                        </p>
+                        <p className=" p-2 text-DiagnosRed mb-2">
+                            Importance: <span className="text-DiagnosGreen">{packageData.faqs.importance}</span>
+                        </p>
+                        <p className="p-2 text-DiagnosRed mb-2">
+                            Who Should Get Tested: <span
+                            className="text-DiagnosGreen">{packageData.faqs.whoShouldGetTested}</span>
+                        </p>
+                    </div>
+                    <WhyUs/>
+                    <div className="bg-white border rounded-lg p-4 shadow-md">
+                        <ul className="list-disc list-inside">
+                            {Object.entries(packageData.testDescriptions).map(([ques, ans], index) => (
+                                <li key={index} className="mb-2">
+                                    <strong>{ques}:</strong> {ans}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+                {/* Right Section */}
+                <div className="w-full md:w-[30%]">
+                    <div className="bg-white border rounded-lg shadow-md text-center">
+                        <p className="font-bold bg-DiagnosRed text-white py-2 rounded-t-lg">Book Now</p>
+                        <p className="p-4">Schedule a blood test or health checkup and have the convenience of being
+                            tested in the comfort of your own home.</p>
+                        <div className="p-4">
+                            <p className="mb-2">Exclusive Offer</p>
+                            <div className="flex justify-center items-center mb-4">
+                                <p className="line-through text-gray-500 mr-2">₹{packageData.originalPrice}</p>
+                                <p className="text-DiagnosGreen text-xl font-bold">₹{packageData.discountedPrice}</p>
+                            </div>
+                            <button
+                                className="p-2 bg-DiagnosRed text-white rounded-full hover:bg-DiagnosGreen transition duration-300">Get
+                                Instant Callback Now
+                            </button>
+                            <CallbackForm/>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </>
     );
 };

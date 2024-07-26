@@ -35,11 +35,12 @@ function Footer() {
 
                     <div className="flex flex-wrap gap-4">
                         {[
-                            {name: "Feedback", url:"/",icon: "Feedback"},
-                            {name: "FAQ's", url:"/", icon: "FAQ"},
-                            {name: "Careers", url:"/careers", icon: "Careers"},
+                            {name: "Feedback", url:"/",icon: "fa-thin fa-comment"},
+                            {name: "FAQ's", url:"/", icon: "fa-thin  fa-question-circle"},
+                            {name: "Careers", url:"/careers", icon: "fa-thin fa-briefcase"},
                         ].map((link) => (
                             <div key={link.name} className="flex flex-col items-center">
+                                <i className={`fa-2x md:fa-3x ${link.icon} mb-2`}></i>
                                 <a key={link.name} href={link.url} className="text-sm">
                                     {link.name}
                                 </a>
