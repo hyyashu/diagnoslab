@@ -53,7 +53,7 @@ const CallbackForm = () => {
     };
 
     return (
-        <div className="p-5 rounded bg-white w-[300px]">
+        <div className="p-5 rounded bg-white w-full">
             <h2 className="text-DiagnosRed font-semibold mb-2 text-center">Request a Callback</h2>
             <Loader visible={loading} height={50} width={50} ariaLabel="Submitting form" />
             {status && !loading && <p className="text-DiagnosGreen text-center mt-2">{status}</p>}

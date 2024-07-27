@@ -1,10 +1,13 @@
+'use client'
 import React from 'react';
 import Image from "next/image";
+import GoogleReviews from "@/components/GoogleReview";
 
 function Footer() {
     return (
 
         <footer>
+            <GoogleReviews />
             <div className="bg-DiagnosRed text-white">
                 <div className="container mx-auto py-6 text-center">
                     <h2 className="text-2xl font-semibold">Our Presence</h2>
