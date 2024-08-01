@@ -7,4 +7,3 @@ const Blogs = () => {
   );
 };
 export default Blogs;
-l;
