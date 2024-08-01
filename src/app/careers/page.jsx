@@ -39,7 +39,7 @@ const Careers = () => {
               href={job.applyLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-DiagnosRed text-white py-2 px-4 rounded hover:bg-DiagnosGreen"
+              className="inline-block bg-primary text-white py-2 px-4 rounded hover:bg-DiagnosGreen"
             >
               Apply Now
             </a>

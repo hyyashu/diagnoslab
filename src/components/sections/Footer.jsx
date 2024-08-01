@@ -24,7 +24,7 @@ function Footer() {
             {footerLinks.map((link) => (
               <div key={link.name} className="flex flex-col items-center">
                 <i className={`fa-2x md:fa-3x ${link.icon} mb-2`}></i>
-                <a href={link.url} className="text-sm">
+                <a href={link.url} className="text-sm hover:underline">
                   {link.name}
                 </a>
               </div>

@@ -52,3 +52,22 @@ export const headerLinks = [
   // { name: "X-Ray & Scans", url: "/Dianostics" },
   { name: "Book a Test", url: "/book-a-test" },
 ];
+
+export const blogPosts = [
+  {
+    slug: "first-blog-post",
+    title: "First Blog Post",
+    author: "John Doe",
+    date: "October 10, 2023",
+    content:
+      "This is the content of the first blog post. It can include text, images, and other elements to make the post engaging and informative.",
+  },
+  {
+    slug: "second-blog-post",
+    title: "Second Blog Post",
+    author: "Jane Smith",
+    date: "October 11, 2023",
+    content:
+      "This is the content of the second blog post. It can include text, images, and other elements to make the post engaging and informative.",
+  },
+];

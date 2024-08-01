@@ -36,9 +36,15 @@ function GoogleReviews() {
     <div className="p-4 max-w-screen-xl mx-auto">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Google Reviews</h2>
-        <button className="bg-blue-500 text-white px-4 py-2 rounded">
-          Review us on Google
-        </button>
+        <a
+          href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x39f5e3088f40bb2b:0x46180907852da273!12e1?source=g.page.m.nr._&laa=nmx-review-solicitation-recommendation-card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-blue-500 text-white px-4 py-2 rounded">
+            Review us on Google
+          </button>
+        </a>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {reviews.map((review, index) => (
