@@ -1,10 +1,4 @@
 import { useEffect, useState } from "react";
-import {
-  HEADINGS,
-  LOW_PRIORITY,
-  RichTextAction,
-  RICH_TEXT_OPTIONS,
-} from "@/app/constant/lexical/constant";
 import Divider from "./Divider";
 
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
@@ -23,6 +17,12 @@ import { mergeRegister } from "@lexical/utils";
 import { $createHeadingNode } from "@lexical/rich-text";
 import { $wrapNodes } from "@lexical/selection";
 import { useKeyBindings } from "@/app/hooks/useKeyBindings";
+import {
+  HEADINGS,
+  LOW_PRIORITY,
+  RichTextAction,
+  RICH_TEXT_OPTIONS,
+} from "./constant";
 
 export default function ToolbarPlugin() {
   const [editor] = useLexicalComposerContext();

@@ -7,8 +7,10 @@ import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
 import { AutoFocusPlugin } from "@lexical/react/LexicalAutoFocusPlugin";
 import { HeadingNode } from "@lexical/rich-text";
-import ToolbarPlugin from "./Plugins/ToolbarPlugin";
-import CustomOnChangePlugin from "./Plugins/CustomOnChangePlugin";
+import ToolbarPlugin from "./ToolbarPlugin";
+import CustomOnChangePlugin from "./CustomOnChangePlugin";
+
+
 
 const theme = {
   text: {
