@@ -1,7 +1,10 @@
-import { LOW_PRIORITY, RichTextAction } from "@/app/constant/lexical/constant";
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
 import { useEffect } from "react";
 import { KEY_ENTER_COMMAND } from "lexical";
+import {
+  LOW_PRIORITY,
+  RichTextAction,
+} from "@/components/Plugins/lexical/constant";
 
 export const useKeyBindings = ({ onAction }) => {
   const [editor] = useLexicalComposerContext();
