@@ -3,9 +3,7 @@ import React from "react";
 const Blogs = () => {
   return (
     <>
-      <div>
-        <BlogCard title={"Hello"} />
-      </div>
+      <div></div>
     </>
   );
 };
