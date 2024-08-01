@@ -1,6 +1,5 @@
 "use client";
-import { LexicalEditor } from "lexical";
-// import LexicalEditor from "@/components/Plugins/lexical/LexicalEditor";
+import LexicalEditor from "@/components/Plugins/lexical/LexicalEditor";
 import React, { useState } from "react";
 
 const EditorPage = () => {
