@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export const dynamic = "force-dynamic";
@@ -16,7 +16,7 @@ export async function POST(request) {
       },
     });
     await transporter.sendMail({
-      from: email || `"Diagnos Lab" <${process.env.SMTP_USER}>`,
+      from: `"Diagnos Lab" <${process.env.SMTP_USER}>`,
       to: "care@diagnoslab.in",
       subject: subject || "No Subject",
       text: message || "No Text",

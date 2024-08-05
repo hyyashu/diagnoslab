@@ -34,19 +34,19 @@ const PackageName = () => {
             <div className="px-4">
               <div className="flex flex-col md:flex-row md:space-x-4 mb-4">
                 <div className="flex items-center mb-2 md:mb-0">
-                  <i className="fa-solid fa-genderless text-blue-500 text-xl mr-3"></i>
+                  <i className="fa-solid fa-genderless text-primary-500 text-xl mr-3"></i>
                   <p className="text-gray-700">Gender For: Male, Female</p>
                 </div>
                 <div className="flex items-center mb-2 md:mb-0">
-                  <i className="fa-solid fa-clock text-blue-500 text-xl mr-3"></i>
+                  <i className="fa-solid fa-clock text-primary text-xl mr-3"></i>
                   <p className="text-gray-700">Report TAT: Same day</p>
                 </div>
                 <div className="flex items-center mb-2 md:mb-0">
-                  <i className="fa-solid fa-moon text-blue-500 text-xl mr-3"></i>
+                  <i className="fa-solid fa-moon text-primary text-xl mr-3"></i>
                   <p className="text-gray-700">Overnight: Fasting Required</p>
                 </div>
                 <div className="flex items-center mb-2 md:mb-0">
-                  <i className="fa-solid fa-flask text-blue-500 text-xl mr-3"></i>
+                  <i className="fa-solid fa-flask text-primary text-xl mr-3"></i>
                   <div>
                     <p className="text-gray-700">Sample Type: 2ML WB EDT</p>
                   </div>
@@ -95,13 +95,10 @@ const PackageName = () => {
               </span>
             </p>
           </div>
-          <div className="flex flex-wrap justify-center">
+          <div className="flex flex-wrap">
             <CallbackForm layout="landscape" showFAQ={false} />
           </div>
           <div className="bg-white border rounded-lg shadow-md ">
-            <p className="font-bold bg-primary text-center text-white py-2">
-              Most Ask Question
-            </p>
             <Faqs />
           </div>
           <WhyUs />

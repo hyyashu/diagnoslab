@@ -9,8 +9,11 @@ import {
 
 const Faqs = () => {
   return (
-    <div className="p-2 text-left">
-      <Accordion type="single" collapsible>
+    <div className="text-left">
+      <p className="font-bold bg-primary text-center text-white py-2">
+        Frequently Asked Questions
+      </p>
+      <Accordion className="p-2" type="single" collapsible>
         {faqData.map((item, index) => (
           <AccordionItem key={index} value={`item-${index}`}>
             <AccordionTrigger className="text-left">
