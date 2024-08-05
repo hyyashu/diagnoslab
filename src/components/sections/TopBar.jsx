@@ -1,7 +1,7 @@
 import React from "react";
 import { headerLinks } from "@/app/constant/constant";
 
-const NavBar = () => {
+const TopBar = () => {
   return (
     <>
       <nav className="flex flex-wrap content-center bg-primary h-[2.875em] fixed left-0 right-0 top-0 w-full z-5 text-white">
@@ -16,13 +16,16 @@ const NavBar = () => {
             ))}
           </ul>
         </div>
-        <div className="flex flex-wrap pr-4 pl-4 mr-auto ml-auto justify-end">
+        <div className="hidden md:flex flex-wrap pr-4 pl-4 mr-auto ml-auto justify-end">
           <a className="pl-4">Get a Callback</a>
           <a className="pl-4">About Us</a>
         </div>
+        {/* <div className="flex items-center">
+          <p>Customer Care : 8404802201</p>
+        </div> */}
       </nav>
     </>
   );
 };
 
-export default NavBar;
+export default TopBar;

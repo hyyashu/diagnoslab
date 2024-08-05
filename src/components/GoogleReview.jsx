@@ -26,11 +26,18 @@ function GoogleReviews() {
           }
         }
       );
+
       return () => {
-        document.body.removeChild(mapDiv);
+        if (document.body.contains(mapDiv)) {
+          document.body.removeChild(mapDiv);
+        }
       };
     }
   }, [isLoaded, loadError]);
+
+  if (loadError) {
+    return <div>Error loading map</div>;
+  }
 
   return (
     <div className="p-4 max-w-screen-xl mx-auto">
@@ -51,14 +58,7 @@ function GoogleReviews() {
           <div key={index} className="border rounded-lg p-4 shadow-lg">
             <div className="flex items-center mb-2">
               {Array.from({ length: review.rating }).map((_, i) => (
-                <svg
-                  key={i}
-                  className="w-4 h-4 text-primary"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.69 5.204a1 1 0 00.95.69h5.462c.969 0 1.372 1.24.588 1.81l-4.406 3.19a1 1 0 00-.364 1.118l1.69 5.204c.3.921-.755 1.688-1.54 1.118l-4.406-3.19a1 1 0 00-1.175 0l-4.406 3.19c-.784.57-1.838-.197-1.54-1.118l1.69-5.204a1 1 0 00-.364-1.118l-4.406-3.19c-.784-.57-.38-1.81.588-1.81h5.462a1 1 0 00.95-.69l1.69-5.204z" />
-                </svg>
+                <i key={i} className="fa-light fa-star text-primary"></i>
               ))}
             </div>
             <p className="mb-2">{review.text}</p>

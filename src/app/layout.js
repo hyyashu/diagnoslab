@@ -3,9 +3,9 @@ import "../../public/fonts/fontawesome/css/all.css";
 import "../../public/icons/icons.css";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { Montserrat } from "next/font/google";
+import TopBar from "@/components/sections/TopBar";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
-import NavBar from "@/components/sections/NavBar";
 import React from "react";
 
 const font = Montserrat({
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       <GoogleTagManager gtmId="GTM-FLMYM554K8" />
       <body className={font.className}>
         <header>
-          <NavBar />
+          <TopBar />
           <Header />
         </header>
         {children}
