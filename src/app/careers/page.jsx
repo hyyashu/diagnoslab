@@ -20,9 +20,15 @@ const Careers = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("/careers.json");
-      const data = await response.json();
-      setJobs(data);
+      try {
+        const response = await fetch("/careers.json");
+        if (!response.ok) throw new Error("Failed to fetch job data");
+        const data = await response.json();
+        setJobs(data);
+      } catch (error) {
+        console.error("Error fetching job data:", error);
+        setStatus("Error loading job listings.");
+      }
     };
     fetchData();
   }, []);
@@ -36,20 +42,29 @@ const Careers = () => {
     }
   };
 
-  const uploadFile = async (file) => {
+  const uploadFile = async (file, userName) => {
     const formData = new FormData();
-    formData.append("file", file);
 
-    const response = await fetch("/api/uploadFile", {
-      method: "POST",
-      body: formData,
-    });
+    // Generate a unique file name with the user's name
+    const uniqueFileName = `${userName}_${Date.now()}_${file.name}`;
+    formData.append("file", file, uniqueFileName);
 
-    const result = await response.json();
-    if (response.ok) {
-      return result.url;
-    } else {
-      throw new Error(result.error || "File upload failed");
+    try {
+      const response = await fetch("/api/uploadFile", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        const result = await response.json();
+        throw new Error(result.error || "File upload failed");
+      }
+
+      const result = await response.json();
+      return result.url; // URL from S3
+    } catch (error) {
+      console.error("File upload error:", error);
+      throw new Error("Failed to upload file.");
     }
   };
 
@@ -60,7 +75,7 @@ const Careers = () => {
     try {
       let resumeUrl = "";
       if (formData.resume) {
-        resumeUrl = await uploadFile(formData.resume);
+        resumeUrl = await uploadFile(formData.resume, formData.name);
       }
 
       const emailContent = `
@@ -86,23 +101,24 @@ const Careers = () => {
         }),
       });
 
-      const result = await response.json();
-      if (response.ok) {
-        setStatus("Application submitted successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          number: "",
-          city: "",
-          role: "",
-          message: "",
-          resume: null,
-        });
-      } else {
-        setStatus("Failed to submit the application.");
+      if (!response.ok) {
+        const result = await response.json();
+        throw new Error(result.error || "Failed to send email");
       }
+
+      setStatus("Application submitted successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        number: "",
+        city: "",
+        role: "",
+        message: "",
+        resume: null,
+      });
     } catch (error) {
-      setStatus("An error occurred.");
+      console.error("Form submission error:", error);
+      setStatus(error.message || "An error occurred.");
     } finally {
       setLoading(false);
     }

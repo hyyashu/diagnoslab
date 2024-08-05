@@ -1,43 +1,34 @@
-import { handleUpload } from "@vercel/blob/client";
-import { NextResponse } from "next/server";
+import { s3Client, PutObjectCommand } from "@/lib/s3Client";
 
-export async function POST(request) {
+export async function POST(req) {
   try {
-    const body = await request.json();
+    const formData = await req.formData();
+    const file = formData.get("file");
 
-    // Perform the file upload operation
-    const jsonResponse = await handleUpload({
-      body,
-      request,
-      onBeforeGenerateToken: async (pathname, clientPayload) => {
-        return {
-          allowedContentTypes: [
-            "application/pdf", // PDF
-            "image/jpeg", // JPEG
-            "image/png", // PNG
-            "image/gif", // GIF
-            "application/msword", // DOC
-            "application/vnd.openxmlformats-officedocument.wordprocessingml.document", // DOCX
-          ],
-          maxSize: 10 * 1024 * 1024, // 10MB
-          tokenPayload: JSON.stringify({}),
-        };
-      },
-      onUploadCompleted: async ({ blob, tokenPayload }) => {
-        console.log("Blob upload completed:", blob, tokenPayload);
-        // Implement post-upload actions, e.g., updating the database
-        // Example: await updateDatabase(blob.url);
-      },
-    });
+    if (!file) {
+      return new Response("No file uploaded", { status: 400 });
+    }
 
-    // Return the response from Vercel Blob
-    return NextResponse.json(jsonResponse);
-  } catch (error) {
-    console.error("Error in uploadFile API:", error);
-    // Return an error response with a status code of 500
-    return NextResponse.json(
-      { error: error.message },
-      { status: 500 } // Internal Server Error
+    const buffer = Buffer.from(await file.arrayBuffer());
+
+    const params = {
+      Bucket: "diagnoslab", // Your S3 bucket name
+      Key: file.name,
+      Body: buffer,
+      ContentType: file.type,
+    };
+
+    await s3Client.send(new PutObjectCommand(params));
+
+    // Generate the URL for the uploaded file
+    const fileUrl = `https://${params.Bucket}.s3.amazonaws.com/${params.Key}`;
+
+    return new Response(
+      JSON.stringify({ message: "File uploaded successfully", url: fileUrl }),
+      { status: 200, headers: { "Content-Type": "application/json" } }
     );
+  } catch (error) {
+    console.error("Error uploading file:", error);
+    return new Response("Error uploading file", { status: 500 });
   }
 }
