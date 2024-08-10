@@ -58,14 +58,14 @@ const CallbackForm = ({ layout = "portrait", showFAQ = true }) => {
       <h2 className="text-primary font-semibold mb-2 text-center">
         Request a Callback
       </h2>
-      <Loader
+      {/* <Loader
         visible={loading}
         height={50}
         width={50}
         ariaLabel="Submitting form"
-      />
+      /> */}
       {status && !loading && (
-        <p className="text-DiagnosGreen text-center mt-2">{status}</p>
+        <p className="text-green-600 text-center font-bold mt-2">{status}</p>
       )}
       <form
         className={`flex flex-col space-y-4 ${

@@ -37,17 +37,18 @@ const MobileNav = () => {
               ))}
             </ul>
             <div className="flex gap-1">
-              <Button className="mt-4 w-full" href="tel:8404802201">
-                <i className="fas fa-phone text-center p-1"></i>
-                Call Now
-              </Button>
-              <Button
-                href="https://wa.me/918404802201"
-                className="mt-4 w-full bg-green-600"
-              >
-                <i className="fa-brands fa-whatsapp text-center p-1"></i>
-                WhatsApp
-              </Button>
+              <a href="tel:8404802201" className="w-full">
+                <Button className="mt-4 w-full">
+                  <i className="fas fa-phone text-center p-1"></i>
+                  Call Now
+                </Button>
+              </a>
+              <a href="https://wa.me/918404802201" className="w-full">
+                <Button className="mt-4 w-full bg-green-600">
+                  <i className="fa-brands fa-whatsapp text-center p-1"></i>
+                  WhatsApp
+                </Button>
+              </a>
             </div>
           </nav>
           {/* <SheetClose asChild>

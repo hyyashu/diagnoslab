@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Diabetes Monitoring Panel - 1",
+    "originalPrice": 2400,
+    "discountedPrice": 1400,
+    "parameters": 30,
+    "reporting": "SAME DAY",
+    "fasting": "REQUIRED",
+    "specimen": {
+      "Blood": "EDTA 2ml",
+      "Urine": "Random urine"
+    },
+    "testDescriptions": {
+      "HbA1c": "Measures average blood glucose levels over three months, essential for long-term diabetes management and control.",
+      "Fasting glucose": "Assesses blood sugar levels after fasting, crucial for diagnosing and monitoring diabetes.",
+      "Postprandial glucose": "Measures blood sugar after meals to evaluate how well diabetes is managed post-eating.",
+      "Blood urea nitrogen (BUN)": "Monitors kidney function, helping detect diabetes-related kidney damage.",
+      "Creatinine": "Evaluates kidney health, crucial for detecting complications from diabetes.",
+      "Uric acid": "Checks uric acid levels to prevent gout, which can be associated with diabetes.",
+      "Total cholesterol": "Assesses overall cholesterol levels, important for managing cardiovascular risks linked to diabetes.",
+      "HDL cholesterol": "Measures 'good' cholesterol, helping lower the risk of heart disease in diabetes patients.",
+      "Triglycerides": "Evaluates fat levels in the blood, crucial for reducing heart disease risk in diabetes.",
+      "Direct LDL cholesterol": "Measures 'bad' cholesterol directly, essential for managing heart health in diabetes.",
+      "Microalbumin random urine": "Detects small amounts of albumin in urine, an early sign of diabetic kidney disease.",
+      "Urinary microalbumin": "Assesses kidney health by detecting protein leakage, indicating potential diabetes complications."
+    },
+    "faqs": {
+      "What is the Diabetes Monitoring Panel?": "Tests for blood glucose levels, kidney function, cholesterol, and urine microalbumin.",
+      "Why are these tests conducted?": "To monitor diabetes management and assess kidney and cardiovascular health.",
+      "Who should get this test done?": "Individuals with diabetes or those at risk of developing diabetes.",
+      "Why are these tests important?": "They help track blood sugar control and detect complications early, ensuring effective diabetes management.",
+      "What should I know about fasting for this test?": "Fasting is required before taking this test to ensure accurate blood glucose measurements.",
+      "When will I receive my results?": "Results are typically available on the same day."
+    }
+  },
+  {
+    "name": "NIROGYAM D PLUS",
+    "originalPrice": 10000,
+    "discountedPrice": 2500,
+    "parameters": 87,
+    "reporting": "SAME DAY",
+    "fasting": "REQUIRED",
+    "specimen": {
+      "Blood": "Various types (e.g., EDTA, serum)",
+      "Urine": "Routine urine"
+    },
+    "testDescriptions": {
+      "CBC": "Complete Blood Count (CBC) detects anemia, infection, and inflammation, providing a comprehensive overview of overall health.",
+      "ESR": "Erythrocyte Sedimentation Rate (ESR) measures inflammation levels, aiding in the diagnosis and monitoring of chronic diseases.",
+      "HbA1c": "HbA1c measures average blood sugar levels over three months, crucial for diagnosing and managing diabetes.",
+      "Sugar Fasting": "Fasting Blood Sugar tests blood glucose levels after fasting, helping diagnose diabetes and monitor glucose control.",
+      "LFT": "Liver Function Tests (LFT) assess liver health by measuring enzymes and proteins, detecting liver damage or disease.",
+      "LDH": "Lactate Dehydrogenase (LDH) indicates tissue damage and inflammation, aiding in the diagnosis of various conditions.",
+      "GGT": "Gamma-Glutamyl Transferase (GGT) evaluates liver and bile duct function, helping detect liver disease and alcohol abuse.",
+      "Lipid Profile": "Lipid Profile measures cholesterol and triglyceride levels, assessing cardiovascular health and the risk of heart disease.",
+      "KFT": "Kidney Function Tests (KFT) measure waste products in the blood, evaluating kidney health and detecting renal disorders.",
+      "Iron Profile": "Iron Profile tests iron levels, detecting anemia and other conditions related to iron deficiency or overload.",
+      "Urinary Microalbumin": "Urinary Microalbumin detects early kidney damage, particularly in diabetes and hypertension patients.",
+      "Electrolytes": "Electrolyte Panel measures levels of essential minerals, ensuring proper muscle, nerve, and organ function.",
+      "T3, T4, TSH": "Thyroid Function Tests (T3, T4, TSH) evaluate thyroid health, diagnosing hypo- or hyperthyroidism and related disorders.",
+      "25-OH Vitamin D": "25-OH Vitamin D measures vitamin D levels, essential for bone health and immune function.",
+      "Vitamin B12": "Vitamin B12 levels detect deficiencies that can cause anemia and neurological issues.",
+      "Urine Routine": "Urine Routine analysis detects infections, kidney issues, and metabolic disorders through examination of urine components."
+    },
+    "faqs": {
+      "What is the Nirogyam D test?": "Comprehensive tests assessing blood health, glucose, liver and kidney function, vitamin levels, and urine health.",
+      "Why are these tests conducted?": "To evaluate overall health, monitor chronic conditions, and manage metabolic and nutrient imbalances.",
+      "Who should get this test done?": "Individuals needing a thorough health checkup, especially with chronic conditions or symptoms affecting multiple systems.",
+      "Why are these tests important?": "They provide a broad overview of health, helping diagnose and manage various conditions and monitor treatment progress.",
+      "What should I know about fasting for this test?": "Fasting is required before taking this test to ensure accurate blood glucose measurements.",
+      "How long does it take to receive results?": "Results are typically available on the same day as the test.",
+      "Are there any risks associated with these tests?": "Generally, these tests are safe with minimal risk. However, consult your healthcare provider if you have any concerns."
+    }
+  },
+  {
+    "name": "BIO T PLUS",
+    "originalPrice": 4000,
+    "discountedPrice": 1100,
+    "parameters": 51,
+    "reporting": "SAME DAY",
+    "fasting": "REQUIRED",
+    "specimen": {
+      "Blood": "Various types (e.g., EDTA, serum)"
+    },
+    "testDescriptions": {
+      "CBC": "Complete Blood Count (CBC) measures blood cells to detect anemia, infections, and overall health, aiding in early disease detection.",
+      "Differential Leukocyte Count": "Differential Leukocyte Count identifies white blood cell types, helping diagnose infections, immune disorders, and various blood-related conditions.",
+      "Glucose Fasting": "Fasting Blood Glucose tests blood sugar levels after fasting, crucial for diagnosing and managing diabetes and metabolic disorders.",
+      "Lipid Profile": "Lipid Profile measures cholesterol and triglycerides, assessing cardiovascular health and risk factors for heart disease and stroke.",
+      "Blood Urea Nitrogen (BUN)": "BUN test evaluates kidney function by measuring waste levels in the blood, aiding in kidney disease diagnosis and management.",
+      "Creatinine": "Creatinine test measures kidney function and health by evaluating waste product levels, crucial for detecting renal disorders.",
+      "Uric Acid": "Uric Acid test identifies elevated levels that can cause gout and kidney stones, helping manage and prevent these conditions.",
+      "Calcium": "Calcium test measures blood calcium levels, essential for bone health and diagnosing conditions like osteoporosis and parathyroid disorders.",
+      "LFT": "Liver Function Tests (LFT) assess liver health by measuring enzymes and proteins, crucial for diagnosing liver diseases and monitoring liver function.",
+      "LDH": "Lactate Dehydrogenase (LDH) measures enzyme levels linked to tissue damage, aiding in diagnosing and monitoring various health conditions.",
+      "Thyroid Profile (T3, T4, TSH)": "Thyroid Profile evaluates thyroid gland function, diagnosing hypo- or hyperthyroidism, and managing related disorders."
+    },
+    "faqs": {
+      "What is the Bio T Plus test?": "Tests for blood health, glucose, cholesterol, kidney function, uric acid, calcium, liver function, and thyroid function.",
+      "Why are these tests conducted?": "To evaluate overall health, monitor metabolic functions, and detect potential issues in blood, kidneys, and liver.",
+      "Who should get this test done?": "Individuals needing a broad health assessment or managing conditions affecting blood, metabolism, and organ function.",
+      "Why are these tests important?": "They help diagnose and monitor various health conditions, ensuring effective management of metabolic and organ functions.",
+      "What should I know about fasting for this test?": "Fasting is required before taking this test to ensure accurate blood glucose and cholesterol measurements.",
+      "How does Bio T Plus compare to Bio T D Plus?": "Bio T D Plus includes HbA1c, providing additional insight into long-term glucose management compared to Bio T Plus."
+    }
+  },
+  {
+    "name": "Complete Blood Count",
+    "originalPrice": 450,
+    "discountedPrice": 320,
+    "parameters": 21,
+    "reporting": "SAME DAY",
+    "fasting": "NOT REQUIRED",
+    "specimen": {
+      "Blood": "Whole blood"
+    },
+    "testDescriptions": {
+      "Hemoglobin": "Measures oxygen-carrying capacity; essential for diagnosing anemia and overall health assessment.",
+      "Hematocrit": "Evaluates the proportion of red blood cells in blood; crucial for detecting dehydration or anemia.",
+      "RBC Count": "Counts red blood cells; helps in diagnosing conditions like anemia and polycythemia.",
+      "MCV (Mean Corpuscular Volume)": "Indicates the average size of red blood cells; important for classifying types of anemia.",
+      "MCH (Mean Corpuscular Hemoglobin)": "Measures average hemoglobin per red blood cell; aids in diagnosing different anemia types.",
+      "MCHC (Mean Corpuscular Hemoglobin Concentration)": "Evaluates hemoglobin concentration in red blood cells; important for detecting anemia.",
+      "RDW-CV (Red Cell Distribution Width-Coefficient of Variation)": "Assesses the variation in red blood cell size; helps in identifying anemia causes.",
+      "Platelet Count": "Counts platelets; vital for diagnosing clotting disorders and monitoring bone marrow function.",
+      "Total Leukocyte Count": "Measures total white blood cells; essential for detecting infections and immune system disorders.",
+      "Neutrophils": "Main white blood cells fighting bacterial infections; high levels indicate infection or inflammation.",
+      "Lymphocytes": "Key players in immune response; increased levels suggest viral infections or chronic inflammation.",
+      "Monocytes": "Large white blood cells that fight infections; high counts indicate chronic inflammatory conditions.",
+      "Eosinophils": "White blood cells responding to allergies and parasitic infections; high levels indicate allergic reactions.",
+      "Basophils": "Least common white blood cells involved in allergic responses; increased levels suggest allergic reactions or inflammation.",
+      "Absolute Neutrophil Count": "Exact number of neutrophils; critical for assessing infection risk and immune health.",
+      "Absolute Lymphocyte Count": "Exact number of lymphocytes; helps in diagnosing immune disorders and infections.",
+      "Absolute Monocyte Count": "Measures monocytes; important for detecting chronic infections and inflammatory conditions.",
+      "Absolute Eosinophil Count": "Counts eosinophils; crucial for diagnosing allergies and parasitic infections.",
+      "Absolute Basophil Count": "Measures basophils; aids in identifying allergic reactions and chronic inflammation."
+    },
+    "faqs": {
+      "What is the Complete Blood Count test?": "Measures red and white blood cells, hemoglobin, and platelets to diagnose conditions like anemia, infection, and blood disorders.",
+      "Why is this test conducted?": "To detect infections, inflammation, and blood disorders early, aiding in timely intervention and treatment monitoring.",
+      "Who should get this test done?": "Anyone with fatigue, weakness, or bruising; those monitoring chronic conditions; during routine health check-ups.",
+      "Why is this test important?": "Helps in diagnosing and monitoring various health conditions, ensuring effective management of blood and immune system functions.",
+      "What should I know about fasting for this test?": "Fasting is not required for this test, making it convenient for patients."
+    }
+  }
+]

@@ -7,7 +7,7 @@ import useFetch from "@/lib/useFetch";
 import TestCard from "@/components/TestCard";
 
 const BookaTest = () => {
-  const { data, loading, error } = useFetch("/data.json");
+  const { data, loading, error } = useFetch("/dataP.json");
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
@@ -22,6 +22,9 @@ const BookaTest = () => {
           <p className="text-DiagnosGreen text-xl text-center font-bold m-3">
             Fast, Reliable and Secure!
           </p>
+          <h2 className="text-DiagnosGreen text-xl text-center font-bold m-3">
+            Top Booked Packages
+          </h2>
           <div className="flex flex-wrap items-center">
             {packageData.map((test, index) => (
               <div
@@ -44,11 +47,21 @@ const BookaTest = () => {
         </div>
         <div className="p-2">
           <div className="bg-white border rounded-lg shadow-md">
-            <p className="font-bold bg-primary text-center text-white py-2">
-              Most Ask Question
-            </p>
             <Faqs />
           </div>
+        </div>
+        <div className="flex bg-gradient-to-l to-primary from-red-400 p-2 rounded-xl items-center justify-evenly text-white mx-10">
+          <a
+            href="https://wa.me/918404802201?text=Hi%2C%20Can%20you%20assist%20me%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
+            <p className="font-bold text-lg">Connect on Whatsapp</p>
+            <div className="border px-2 py-1 rounded-full bg-yellow-50 ml-2">
+              <i className="fa-brands fa-whatsapp text-green-600 text-center text-5xl"></i>
+            </div>
+          </a>
         </div>
       </div>
     </>
