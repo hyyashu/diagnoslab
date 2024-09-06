@@ -1,9 +1,5 @@
 import axios from "axios";
 import xml2js from "xml2js";
-import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
-
-export const maxDuration = 60;
 
 async function sendSoapRequest(endpoint, requestBody, soapAction) {
   try {
@@ -59,16 +55,15 @@ async function extractDataFromResponse(responseData, type) {
 }
 
 export async function GET(req) {
-  const url = new URL(req.url);
-  const searchParams = url.searchParams;
+  const { searchParams } = new URL(req.url);
   let accid = searchParams.get("accid")?.trim();
   let clientid = searchParams.get("clientid")?.trim();
   const logo = searchParams.get("logo")?.trim() || "Y";
   const lrno = searchParams.get("lrno")?.trim();
 
   if (!accid && !lrno) {
-    return NextResponse.json(
-      { error: "Either accid or Lrno is required" },
+    return new Response(
+      JSON.stringify({ error: "Either accid or Lrno is required" }),
       { status: 400 }
     );
   }
@@ -95,24 +90,26 @@ export async function GET(req) {
       accid = await extractDataFromResponse(accessionResponse, "accessionId");
 
       if (!accid) {
-        return NextResponse.json(
-          { error: "Accession ID not found" },
+        return new Response(
+          JSON.stringify({ error: "Accession ID not found" }),
           { status: 404 }
         );
       }
     } catch (error) {
-      return NextResponse.json(
-        {
+      return new Response(
+        JSON.stringify({
           error: "Error fetching Accession ID",
           details: error.message,
-        },
+        }),
         { status: 500 }
       );
     }
   }
 
   if (!accid) {
-    return NextResponse.json({ error: "accid is required" }, { status: 400 });
+    return new Response(JSON.stringify({ error: "accid is required" }), {
+      status: 400,
+    });
   }
 
   if (!clientid) {
@@ -127,11 +124,11 @@ export async function GET(req) {
 
       clientid = await extractDataFromResponse(clientResponse, "clientCode");
     } catch (error) {
-      return NextResponse.json(
-        {
+      return new Response(
+        JSON.stringify({
           error: "Error fetching client code",
           details: error.message,
-        },
+        }),
         { status: 500 }
       );
     }
@@ -148,43 +145,16 @@ export async function GET(req) {
       "http://tempuri.org/ILIMSSERVC/GetAccReportD"
     );
 
-    return NextResponse.json({ data: reportResponse }, { status: 200 });
+    return new Response(JSON.stringify({ data: reportResponse }), {
+      status: 200,
+    });
   } catch (error) {
-    return NextResponse.json(
-      {
+    return new Response(
+      JSON.stringify({
         error: "Error fetching report",
         details: error.message,
-      },
+      }),
       { status: 500 }
     );
-  }
-}
-
-export const dynamic = "force-dynamic";
-
-export async function POST(request) {
-  try {
-    const { email, subject, message } = await request.json();
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtp.hostinger.com",
-      port: parseInt(process.env.SMTP_PORT || "465", 10),
-      secure: process.env.SMTP_SECURE === "true",
-      auth: {
-        user: process.env.SMTP_USER || "admin@diagnoslab.in",
-        pass: process.env.SMTP_PASS || "Verify@1313",
-      },
-    });
-    await transporter.sendMail({
-      from: `"Diagnos Lab" <${process.env.SMTP_USER}>`,
-      to: "care@diagnoslab.in",
-      subject: subject || "No Subject",
-      text: message || "No Text",
-      html: message,
-    });
-
-    return NextResponse.json({ success: true });
-  } catch (error) {
-    console.error("Error sending email:", error);
-    return NextResponse.json({ success: false, error: "Failed to send email" });
   }
 }
