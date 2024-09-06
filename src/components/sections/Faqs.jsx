@@ -1,5 +1,5 @@
 import React from "react";
-import { faqData } from "@/app/constant/constant";
+import { faqData } from "../../constant/constant";
 import {
   Accordion,
   AccordionContent,

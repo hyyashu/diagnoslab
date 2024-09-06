@@ -8,7 +8,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { headerLinks } from "@/app/constant/constant";
+import { headerLinks } from "../../constant/constant";
 
 const MobileNav = () => {
   return (

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useParams } from "next/navigation";
-import { blogPosts } from "@/app/constant/constant";
+import { blogPosts } from "../../../../constant/constant";
 import { timeAgo } from "@/lib/timeUtils";
 timeAgo;
 

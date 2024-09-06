@@ -1,5 +1,5 @@
 import React from "react";
-import { headerLinks } from "@/app/constant/constant";
+import { headerLinks } from "../../constant/constant";
 
 const TopBar = () => {
   return (

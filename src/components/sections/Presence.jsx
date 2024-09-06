@@ -1,5 +1,5 @@
 import React from "react";
-import { cities } from "@/app/constant/constant";
+import { cities } from "../../constant/constant";
 
 const Presence = () => {
   return (

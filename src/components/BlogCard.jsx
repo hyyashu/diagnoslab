@@ -4,26 +4,26 @@ import Image from "next/image";
 
 const BlogCard = ({ title, imgUrl, author, category: category, updatedAt }) => {
   return (
-    <div className="rounded-lg bg-primary text-white">
+    <div className="text-white rounded-lg bg-primary">
       <Image
-        className="rounded-lg w-full h-48 object-cover"
+        className="object-cover w-full h-48 rounded-lg"
         src={imgUrl}
         height="100"
         width="100"
         alt={title`img`}
       />
-      <div className="rounded-lg p-4 text-white">
+      <div className="p-4 text-white rounded-lg">
         <div>
           <h3 className="font-bold text-l">{title}</h3>
           <h4 className="">Posted By:{author}</h4>
         </div>
-        <div className="flex flex-wrap justify-evenly items-center mb-1">
+        <div className="flex flex-wrap items-center mb-1 justify-evenly">
           <div className="flex flex-wrap w-[50%] items-center">
-            <p className="line-through text-sm">{category}</p>
-            <p className="font-bold text-2xl tex"></p>
+            <p className="text-sm line-through">{category}</p>
+            <p className="text-2xl font-bold tex"></p>
           </div>
           <Link href={`/packages/${name}`} className="items-center">
-            <button className="bg-white p-2 text-primary font-semibold rounded">
+            <button className="p-2 font-semibold bg-white rounded text-primary">
               Book Now
             </button>
           </Link>

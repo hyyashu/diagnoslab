@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import GoogleReviews from "@/components/GoogleReview";
 import Presence from "./Presence";
-import { footerLinks, quickLinks, policies } from "@/app/constant/constant";
+import { footerLinks, quickLinks, policies } from "../../constant/constant";
 
 function Footer() {
   return (
