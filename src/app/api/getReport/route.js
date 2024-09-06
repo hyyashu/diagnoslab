@@ -1,6 +1,7 @@
 import axios from "axios";
 import xml2js from "xml2js";
 
+export const maxDuration = 60;
 async function sendSoapRequest(endpoint, requestBody, soapAction) {
   try {
     const response = await axios.post(endpoint, requestBody, {
