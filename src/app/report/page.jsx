@@ -17,7 +17,7 @@ const Report = () => {
 
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/getReport?accid=${accid}`
+        `https:/diagnoslab.in/getReport?accid=${accid}`
       );
 
       const result = response.data.data;
