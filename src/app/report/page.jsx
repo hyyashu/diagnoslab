@@ -16,9 +16,7 @@ const Report = () => {
     setLoading(true);
 
     try {
-      const response = await axios.get(
-        `https:/diagnoslab.in/getReport?accid=${accid}`
-      );
+      const response = await axios.get(`/getReport?accid=${accid}`);
 
       const result = response.data.data;
       const parser = new DOMParser();
