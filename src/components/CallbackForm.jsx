@@ -18,26 +18,45 @@ const CallbackForm = ({ layout = "portrait", showFAQ = true }) => {
     setLoading(true);
 
     const currentTime = new Date().toLocaleString();
-    const htmlContent = `
-      <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 8px; color: #333; max-width: 600px; margin: auto;">
-        <h2 style="color: #007BFF; margin-bottom: 15px; font-size: 24px;">Callback Request</h2>
-        <p style="font-size: 16px; line-height: 1.5;"><strong style="color: #555;">Name:</strong> ${formData.name}</p>
-        <p><strong>Phone Number:</strong> ${formData.phone}</p>
-        <p><strong>Time of Request:</strong> ${currentTime}</p>
-      </div>
-    `;
+    const currentPath = window.location.pathname;
+    // const htmlContent = `
+    //   <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 8px; color: #333; max-width: 600px; margin: auto;">
+    //     <h2 style="color: #007BFF; margin-bottom: 15px; font-size: 24px;">Callback Request</h2>
+    //     <p style="font-size: 16px; line-height: 1.5;"><strong style="color: #555;">Name:</strong> ${formData.name}</p>
+    //     <p><strong>Phone Number:</strong> ${formData.phone}</p>
+    //     <p><strong>Time of Request:</strong> ${currentTime}</p>
+    //   </div>
+    // `;
+    const message = `Dear Team,
 
-    try {
-      const response = await fetch("/api/sendEmail", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.name,
-          email: "",
-          subject: "Callback Request",
-          message: htmlContent,
-        }),
-      });
+We’ve received a new lead. Please follow up with them as soon as possible
+
+Name: ${formData.name}
+Phone Number: ${formData.phone}
+Time of Request: ${currentTime}
+URL Path: ${currentPath}`;
+
+  try {
+    const response = await fetch("/api2/whatsapp/sendMessageGroup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        groupId: "120363315492524907@g.us", // Replace with actual group ID
+        message: message,
+      }),
+    });
+
+    // try {
+    //   const response = await fetch("/api/sendEmail", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify({
+    //       name: formData.name,
+    //       email: "",
+    //       subject: "Callback Request",
+    //       message: htmlContent,
+    //     }),
+    //   });
 
       const result = await response.json();
       if (result.success) {

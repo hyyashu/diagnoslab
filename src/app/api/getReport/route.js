@@ -68,7 +68,7 @@ export async function GET(req) {
 
   if (!accid && !lrno) {
     return NextResponse.json(
-      { error: "Either accid or Lrno is required" },
+      { error: "Either accid or Lrno is req0005MH005676uired" },
       { status: 400 }
     );
   }
@@ -117,7 +117,7 @@ export async function GET(req) {
 
   if (!clientid) {
     try {
-      const clientRequest = `<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetDataSet xmlns="http://tempuri.org/"><sAppId>HYYASHU-G14_20460~fe80::a279:7405:f3c0:1258%9|192.168.1.172~hyyashu</sAppId><str1>SELECT CD, NAME FROM PARTY WHERE ID IN (SELECT PARTY_ID FROM ACC WHERE ACC_ID='${accid}' UNION SELECT CC_ID FROM ACC WHERE ACC_ID='${accid}' AND SND_RPT_TO_CC='Y')</str1><str2/></GetDataSet></s:Body></s:Envelope>`;
+      const clientRequest = `<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetDataSet xmlns="http://tempuri.org/"><sAppId>HYYASHU-G14_20460~fe80::a279:7405:f3c0:1258%9|192.168.1.172~hyyashu</sAppId><str1>SELECT CD, NAME FROM PARTY WHERE ID IN (SELECT PARTY_ID FROM ACC WHERE ACC_ID='0005MH005676' UNION SELECT CC_ID FROM ACC WHERE ACC_ID='0005MH005676' AND SND_RPT_TO_CC='Y')</str1><str2/></GetDataSet></s:Body></s:Envelope>`;
 
       const clientResponse = await sendSoapRequest(
         "http://94.130.133.131:809/LIMSSERVC.svc",
@@ -134,6 +134,9 @@ export async function GET(req) {
         },
         { status: 500 }
       );
+      console.log('====================================');
+      console.log(error);
+      console.log('====================================');
     }
   }
 
