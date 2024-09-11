@@ -34,8 +34,8 @@ export const footerLinks = [
 export const quickLinks = [
   { name: "Home", url: "/" },
   { name: "About Us", url: "/about-us" },
-  { name: "Blogs", url: "/Blogs" },
-  { name: "Center Locator", url: "/Centers" },
+  { name: "Blogs", url: "/blogs" },
+  { name: "Center Locator", url: "/centers" },
   { name: "Contact Us", url: "/contact-us" },
 ];
 
@@ -46,9 +46,9 @@ export const policies = [
 ];
 export const headerLinks = [
   { name: "Home", url: "/" },
-  { name: "Blog", url: "/Blogs" },
+  { name: "Blog", url: "/blogs" },
   // { name: "Tests", url: "/Tests" },
-  { name: "Packages", url: "/Packages" },
+  { name: "Packages", url: "/packages" },
   // { name: "X-Ray & Scans", url: "/Dianostics" },
   { name: "Book a Test", url: "/book-a-test" },
 ];

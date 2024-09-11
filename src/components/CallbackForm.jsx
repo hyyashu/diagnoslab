@@ -41,7 +41,7 @@ URL Path: ${currentPath}`;
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        groupId: "120363315492524907@g.us", // Replace with actual group ID
+        groupId: "120363312991542668@g.us", // Replace with actual group ID
         message: message,
       }),
     });

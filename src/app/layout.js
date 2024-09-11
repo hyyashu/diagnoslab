@@ -8,6 +8,7 @@ import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 import React from "react";
 import Script from "next/script";
+import GTM from "@/components/GTM";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+        {/* <GTM gtmId="GTM-WRHRJJC6" /> */}
       <GoogleTagManager gtmId="GTM-WRHRJJC6" />
       {/* <Script
         id="gtm"
