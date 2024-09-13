@@ -23,10 +23,21 @@ const AutoOpenDialog = () => {
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle> Looking to Book a Test?</DialogTitle>
-          <DialogDescription>
+          <DialogTitle className="text-green-600">
+            Looking to Book a Test?
+          </DialogTitle>
+          <DialogDescription className="text-balance">
             Please share your details, our health advisor will call you or you
-            can call us at +91 8404802201 / 8404802214.!
+            can call us at{" "}
+            <a className="font-bold" href="tel:+918404802201">
+              +91 8404802201{" "}
+            </a>
+            /
+            <a className="font-bold" href="tel:+918404802214">
+              {" "}
+              8404802214
+            </a>
+            !
           </DialogDescription>
           <CallbackForm ShowTitle="" />
         </DialogHeader>

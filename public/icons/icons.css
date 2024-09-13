@@ -13,3 +13,6 @@
 .icon-phone::before {
   content: url("phone.svg");
 }
+.icon-check::before {
+  content: url("phone.svg");
+}

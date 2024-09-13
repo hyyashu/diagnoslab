@@ -40,34 +40,16 @@ export const quickLinks = [
 ];
 
 export const policies = [
-  { name: "Privacy Policy", url: "/privacy-policy" },
+  { name: "Privacy Policy", url: "/policy" },
   { name: "Term of Use", url: "/term-of-use" },
   { name: "Sitemap", url: "/sitemap.xml" },
 ];
 export const headerLinks = [
   { name: "Home", url: "/" },
   { name: "Blog", url: "/blogs" },
+  { name: "Download Report", url: "/report" },
   // { name: "Tests", url: "/Tests" },
   { name: "Packages", url: "/packages" },
   // { name: "X-Ray & Scans", url: "/Dianostics" },
   { name: "Book a Test", url: "/book-a-test" },
-];
-
-export const blogPosts = [
-  {
-    slug: "first-blog-post",
-    title: "First Blog Post",
-    author: "John Doe",
-    date: "October 10, 2023",
-    content:
-      "This is the content of the first blog post. It can include text, images, and other elements to make the post engaging and informative.",
-  },
-  {
-    slug: "second-blog-post",
-    title: "Second Blog Post",
-    author: "Jane Smith",
-    date: "October 11, 2023",
-    content:
-      "This is the content of the second blog post. It can include text, images, and other elements to make the post engaging and informative.",
-  },
 ];

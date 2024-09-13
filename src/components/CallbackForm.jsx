@@ -47,7 +47,7 @@ URL Path: ${currentPath}`;
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            groupId: "120363315492524907@g.us", // Replace with actual group ID
+            groupId: "120363312991542668@g.us", // group ID
             message: message,
           }),
         }
@@ -85,7 +85,7 @@ URL Path: ${currentPath}`;
       {/* Check if the form was submitted */}
       {submitted ? (
         <div className="text-center">
-          <i className="mr-1 fa-light fa-mobile fa-xl"></i>
+          <i className="fa-duotone fa-solid fa-check fa-2xl"></i>
           <h2 className="mb-2 font-semibold text-center text-primary">
             Thank You!
           </h2>

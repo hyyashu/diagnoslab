@@ -5,12 +5,6 @@ import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
-  };
-
   return (
     <>
       <div className="flex flex-wrap justify-between px-4 pt-12 pb-1 mx-auto shadow-lg">
@@ -27,13 +21,13 @@ function Header() {
           </Link>
         </div>
         {/* Menu Icon (for mobile) */}
-        <div className="md:hidden flex items-center">
+        <div className="flex items-center md:hidden">
           <MobileMenu />
         </div>
         {/* Contact Info (hidden on mobile) */}
-        <div className="hidden md:flex items-center">
-          <i className="fa-light fa-mobile fa-xl mr-1"></i>
-          <p className="font-semibold text-xl text">8404802201</p>
+        <div className="items-center hidden md:flex">
+          <i className="mr-1 fa-light fa-mobile fa-xl"></i>
+          <p className="text-xl font-semibold text">8404802201</p>
         </div>
       </div>
     </>
