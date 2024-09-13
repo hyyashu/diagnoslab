@@ -41,17 +41,14 @@ Time of Request: ${currentTime}
 URL Path: ${currentPath}`;
 
     try {
-      const response = await fetch(
-        "https:/diagnoslab.in/api2/whatsapp/sendMessageGroup",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            groupId: "120363312991542668@g.us", // group ID
-            message: message,
-          }),
-        }
-      );
+      const response = await fetch("/api2/whatsapp/sendMessageGroup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          groupId: "120363312991542668@g.us", // group ID
+          message: message,
+        }),
+      });
 
       // try {
       //   const response = await fetch("/api/sendEmail", {
