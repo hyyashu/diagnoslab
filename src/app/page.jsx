@@ -5,6 +5,7 @@ import WhyUs from "@/components/sections/WhyUs";
 import HeroSection from "@/components/sections/HeroSection";
 import useFetch from "@/lib/useFetch";
 import AutoOpenDialog from "@/components/Autopop";
+import PopularTests from "@/components/sections/PopularTests";
 
 export default function Home() {
   const { data, loading, error } = useFetch("/data.json");
@@ -37,6 +38,7 @@ export default function Home() {
         </div>
       </section>
       <WhyUs />
+      <PopularTests />
     </main>
   );
 }
