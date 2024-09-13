@@ -68,7 +68,7 @@ export async function GET(req) {
 
   if (!accid && !lrno) {
     return NextResponse.json(
-      { error: "Either accid or Lrno is req0005MH005676uired" },
+      { error: "Either accid or Lrno is required" },
       { status: 400 }
     );
   }
@@ -134,9 +134,9 @@ export async function GET(req) {
         },
         { status: 500 }
       );
-      console.log('====================================');
+      console.log("====================================");
       console.log(error);
-      console.log('====================================');
+      console.log("====================================");
     }
   }
 
