@@ -9,6 +9,7 @@ import Footer from "@/components/sections/Footer";
 import React from "react";
 import Script from "next/script";
 import GTM from "@/components/GTM";
+import Toast from "@/components/Toast";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
           <Header />
         </header>
         {children}
+        <Toast />
         <Footer />
       </body>
     </html>

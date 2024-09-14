@@ -6,8 +6,11 @@ import HeroSection from "@/components/sections/HeroSection";
 import useFetch from "@/lib/useFetch";
 import AutoOpenDialog from "@/components/Autopop";
 import PopularTests from "@/components/sections/PopularTests";
+import Toast from "@/components/Toast";
+import { showErrorToast } from "@/components/Toast";
 
 export default function Home() {
+  const notify = () => showErrorToast("Wow so easy!");
   const { data, loading, error } = useFetch("/data.json");
 
   if (loading) return <p>Loading...</p>;
@@ -22,6 +25,7 @@ export default function Home() {
       <HeroSection />
       <section className="mt-5 item-center">
         <div className="text-center">
+          <button onClick={notify}>Notify!</button>
           <h2 className="text-2xl font-bold">Most Preferred Packages</h2>
         </div>
         <div className="flex flex-wrap items-center">

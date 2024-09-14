@@ -79,7 +79,6 @@ URL Path: ${currentPath}`;
 
   return (
     <div className="w-full h-full p-5 bg-white rounded">
-      {/* Check if the form was submitted */}
       {submitted ? (
         <div className="text-center">
           <i className="fa-duotone fa-solid fa-check fa-2xl"></i>
