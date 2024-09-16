@@ -10,7 +10,6 @@ import React from "react";
 import Script from "next/script";
 import GTM from "@/components/GTM";
 import Toast from "@/components/Toast";
-
 const font = Montserrat({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -18,9 +17,24 @@ const font = Montserrat({
 
 export const metadata = {
   title: "Diagnos Lab",
-  description: "Diagnos Lab Jamshedpur",
+  description:
+    "Diagno Labs, Jamshedpur's highest-rated and most advanced pathology lab with a 4.9-star rating on Google Reviews. ",
   icons: {
     icon: "/public/icons/DiagnosLabLogo.svg",
+  },
+  // canonical: "https://diagnoslab.in",
+  openGraph: {
+    type: "website",
+    url: "https://diagnoslab.in",
+    title: "Diagnos Lab",
+    description: "Diagnos Lab Jamshedpur",
+    images: [
+      {
+        url: "https://diagnoslab.in/public/icons/DiagnosLabLogo.svg",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 
@@ -40,6 +54,10 @@ export default function RootLayout({ children }) {
                     })(window,document,'script','dataLayer','GTM-WRHRJJC6')`,
         }}
       ></Script> */}
+
+      <head>
+        <link rel="canonical" href="https://diagnoslab.in/" key="canonical" />
+      </head>
       <body className={font.className}>
         <header>
           <TopBar />

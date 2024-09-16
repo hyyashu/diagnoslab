@@ -2,7 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { createSlug } from "@/lib/slugify";
 
-const TestCard = ({ name, originalPrice, discountedPrice, parameters }) => {
+const TestCard = ({
+  cardType,
+  name,
+  originalPrice,
+  discountedPrice,
+  parameters,
+}) => {
   const discountPercentage = Math.ceil(
     ((originalPrice - discountedPrice) / originalPrice) * 100
   );
@@ -27,7 +33,10 @@ const TestCard = ({ name, originalPrice, discountedPrice, parameters }) => {
             <div className="">{`${discountPercentage}% OFF`}</div>
           </div>
 
-          <Link href={`/packages/${createSlug(name)}`} className="items-center">
+          <Link
+            href={`/${cardType}/${createSlug(name)}`}
+            className="items-center"
+          >
             <button className="p-2 font-semibold bg-white rounded text-primary">
               Book Now
             </button>
