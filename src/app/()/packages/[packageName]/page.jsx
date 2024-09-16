@@ -7,18 +7,22 @@ import WhyUs from "@/components/sections/WhyUs";
 import CallbackForm from "@/components/CallbackForm";
 import Faqs from "@/components/sections/Faqs";
 import { calculateDiscountPercentage, roundUp } from "@/lib/utils";
+import { createSlug } from "@/lib/slugify";
 
 const PackageName = () => {
   const pathname = usePathname();
-  const packageName = decodeURIComponent(
+  const packageSlug = decodeURIComponent(
     pathname.split("/").pop()
   ).toLowerCase();
+
   const { data, loading, error } = useFetch("/data.json");
+
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
-  const packageData = data?.find(
-    (pkg) => pkg.name.toLowerCase() === packageName
-  );
+
+  // Find the package where the slug matches
+  const packageData = data?.find((pkg) => createSlug(pkg.name) === packageSlug);
+
   if (!packageData) return <p>Package was not found</p>;
 
   const { originalPrice, discountedPrice } = packageData;
