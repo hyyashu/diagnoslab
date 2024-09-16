@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { createSlug } from "@/lib/slugify";
 
 const TestCard = ({ name, originalPrice, discountedPrice, parameters }) => {
   const discountPercentage = Math.ceil(
@@ -25,7 +26,8 @@ const TestCard = ({ name, originalPrice, discountedPrice, parameters }) => {
             <p className="text-2xl font-bold tex">{`₹${discountedPrice}`}</p>
             <div className="">{`${discountPercentage}% OFF`}</div>
           </div>
-          <Link href={`/packages/${name}`} className="items-center">
+
+          <Link href={`/packages/${createSlug(name)}`} className="items-center">
             <button className="p-2 font-semibold bg-white rounded text-primary">
               Book Now
             </button>
